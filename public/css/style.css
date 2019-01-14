@@ -1,0 +1,842 @@
+/****************************/
+/****************************/
+/***INFORMATION GENERIQUE ***/
+/****************************/
+/****************************/
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    font-family: 'Fira Sans', sans-serif;
+}
+h1 {
+    
+    font-weight: 800;
+    font-size: 40px;
+}
+
+h2 {
+    
+    font-weight: 700;
+    font-size: 35px;
+}
+
+h3 {
+    
+    font-weight: 600;
+    font-size: 30px;
+}
+
+h4 {
+    
+    font-weight: 500;
+    font-size: 25px;
+}
+ 
+h5 {
+    
+    font-weight: 400;
+    font-size: 20px;
+}
+
+h6 {
+    
+    font-weight: 300;
+    font-size: 18px;
+}
+
+p {
+    
+    font-weight: 200;
+    font-size: 16px;
+}
+
+a {
+    
+    color: white;
+}
+
+a:hover {
+    font-weight: 600;
+    color: white;
+}
+
+.active {
+    
+    color: #a34d1f;
+    
+}
+
+.btn {
+    
+    border-radius: 25px;
+    background-color: #000000;
+    font-size: 16px;
+    width: 165px; 
+    height: 42px;
+    color: white;
+    /*box-shadow: 1px 1px 5px #434141;*/
+    border: none;
+    
+}
+
+.btn:hover {
+    
+    border-radius: 25px;
+    background-color: #a34d1f;
+    font-size: 16px;
+    width: 165px;
+    /*height: 30px;*/
+    color: white;
+    /*box-shadow: 1px 1px 5px #434141;*/
+     border: none;
+    text-decoration: none;
+    
+}
+
+.btn-link:hover {
+    
+    text-decoration: none !important;
+}
+
+::selection {
+    background-color: #a34d1f; 
+    color: white;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+
+#toTop{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: none;
+}
+
+input[type="radio"] {
+    display:none !important;
+}
+/**********************************/
+/*********************************/
+/*** Téléphone Noir Info Site ***/
+/*******************************/
+/******************************/
+
+.navigation  {
+    
+    background-color: black;
+    height: 40px;
+    font-size: 14px;
+}
+
+.telall {
+    
+    color: white;
+}
+
+.barrenoir li a {
+    
+    margin-right: 30px;
+}
+
+#contactnoir {
+    
+    margin-right: 0;
+}
+
+.wrap-barrenoir {
+    height: 100%;
+    padding: 0;
+}
+
+/******************************************/
+/*****************************************/
+/*** Logo & Parculier et Professionel ***/
+/***************************************/
+/**************************************/
+
+#partic {
+    
+    margin-right: 60px;
+}
+
+
+.logo {
+    margin-top: 40px;
+    height: 80px;
+    
+}
+#menunavparticulier {
+    margin-top: 40px;
+}
+
+.active {
+    font-weight: 600;
+}
+
+.navigation2 {
+    
+    height: 180px;
+    padding: 12px 50px;
+}
+
+.navigation2-2 {
+    
+    padding: 20px 50px;
+}
+
+#professionel {
+    color: black;
+}
+
+#professionel a:hover {
+    color: #a34d1f; 
+}
+
+.ppta a {
+    
+    font-size: 22px; 
+    color: black;
+    
+}
+
+.ppta a:hover {
+    
+     color: #a34d1f;
+}
+
+.ppta a:active {
+    
+    color: #a34d1f; 
+    font-weight: 400;
+}
+
+.ppta > .nav-item {
+    
+    height: 40px;
+}
+ 
+.sac {
+    
+    padding: 0;
+    background-color: white;
+    box-shadow: 1px 1px 10px #efefef; 
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    
+    background-color: black;
+    padding: 20px;
+    font-size: 23px;
+}
+#proff {
+    color: black;
+    padding: 20px;
+    font-size: 23px;
+    border-bottom : 0.5px solid #a34d1f;
+    border-radius: 0px;
+}
+/**************************************************/
+/*************************************************/
+/*** Menu : NavBar des Services Particulier *****/
+/***********************************************/
+/**********************************************/
+
+.navigation3 {
+    
+    padding: 0;
+    background-color: #a34d1f;
+}
+
+.navigation3 > a:hover {
+   
+    color: black;
+}
+
+.picto-nav {
+    font-size: 26px;
+    display: block;
+    text-align: center;
+}
+
+.navigation3 a {
+   
+    font-size: 12px;
+
+}
+.nav-item {
+  
+}
+
+.navbar-collapse {
+    
+    width: 100%;
+    background-color: #a34d1f;
+}
+
+.navigation-toogle3 > a.navbar-brand {
+    
+    font-size: 25px;
+}
+
+.navmaron {
+    padding: 0;
+    height: 100%;
+}
+
+.navbar-toggler {
+    
+    border: 0.5px solid white;
+}
+
+.navbar-nav > .nav-item {
+    
+    border-bottom: 1px solid white;
+    font-size: 20px;
+}
+
+.navbar-nav > .nav-item > a.nav-link {
+    
+    font-size: 20px;
+    display: block;
+}
+
+.navbar-nav > .nav-item > .nav-link:hover {
+    
+    font-size: 20px;
+    display: block;
+    background-color: #683114;
+    color: white;
+}
+
+.navigation-toogle3 {
+    
+    padding: 30px;
+}
+
+ul.navmaron > li.nav-item > a.nav-link {
+    height: 80px;
+    width: 142.5px;
+    text-align: center;
+    padding: 0;
+    padding-top: 10px;
+    color: white;
+    
+}
+
+.navigation3 a:hover {
+    background-color: #683114;
+    display: block;
+}
+
+.nav-link.disabled {
+    color: white;
+}
+
+.dropdown-menu {
+    margin-top: 0;
+    border-radius: 0px;
+    border: 0;
+    padding: 0;
+}
+.dropdown-item {
+    background-color: #a34d1f;
+    color: white;
+    font-size: 14px;
+    
+    padding: 10px;
+   
+}
+.dropdown-item:hover {
+    color: white;
+    
+}
+
+.sousmenu {
+    display: block;
+}
+/**************************************************/
+/*************************************************/
+/****** Jumbotron : Image de representation *****/
+/***********************************************/
+/**********************************************/
+
+.jumbotron2 {
+
+    height: 300px;
+    margin-bottom: 0;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(255,255,255,.6);
+    border-radius: 0;
+    padding: 0;
+    background-attachment:fixed;
+    
+    
+}
+
+.jumbotron2 h1{
+    
+    vertical-align: middle;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-stretch: ultra-condensed;
+    font-size: 50px;
+    
+}
+
+.content-jumbotron {
+    height: 300px;
+    z-index: 200;
+    margin: auto;
+    padding-top: 80px;
+    color: black;
+    
+}
+
+a.navigation3 {
+    
+    color: white;
+}
+
+
+/**************************************************/
+/*************************************************/
+/****** Formulaire : Devis personnalisé *********/
+/***********************************************/
+/**********************************************/
+
+.formulaireP {
+    
+    margin-top: 30px;
+    background-color: grey;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #683114;
+    color: white;
+    z-index: 100;
+    height: 130px;
+    max-width: none;
+    box-shadow: 1px 1px 2px black;
+
+}
+
+.formsbloc {
+    top: -90px;
+    z-index: 100;
+    
+    
+    
+}
+
+.selectButt {
+    width : 400px;
+    display: inline-block;
+    height: 30px;
+    
+    
+}
+
+.form-control {
+    
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    display: inline-block;
+    height: 50px;
+    color: black;
+    -moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+    
+    
+}
+
+#inputState {
+    --webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+    height: 3px;
+    font-size: 14px;
+    width: 100%;
+    border: white;
+    
+}
+
+.sellect {
+    height: 50px;
+    appearance: none;
+}
+
+.custom-dropdown--large {
+    font-size: 1.5em;
+}
+
+.custom-dropdown--small {
+    font-size: .7em;
+}
+
+.custom-dropdown__select{
+    font-size: inherit; /* inherit size from .custom-dropdown */
+    padding: .5em; /* add some space*/
+    margin: 0; /* remove default margins */
+}
+
+.custom-dropdown__select--white {
+    background-color: #fff;
+    color: #444;
+    border-radius: 10px;
+}
+
+@supports (pointer-events: none) and
+      ((-webkit-appearance: none) or
+      (-moz-appearance: none) or
+      (appearance: none)) {
+
+    .custom-dropdown {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .custom-dropdown__select {
+        
+        border: 1px solid #efefef;
+        border-radius: 25px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;  
+        
+    }
+
+    .custom-dropdown::before,
+    .custom-dropdown::after {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+    }
+
+    .custom-dropdown::after { /*  Custom dropdown arrow */
+        content: "\25BC";
+        height: 1em;
+        font-size: .625em;
+        line-height: 1;
+        right: 1.2em;
+        top: 50%; margin-top: -.5em;
+    }
+
+    .custom-dropdown::before { /*  Custom dropdown arrow cover */
+        width: 2em;
+        right: 0; top: 0; bottom: 0;
+    }
+
+    .custom-dropdown__select[disabled] {
+        color: rgba(0,0,0,.3);
+    }
+
+    .custom-dropdown.custom-dropdown--disabled::after {
+        color: rgba(0,0,0,.1);
+    }
+
+    /* White dropdown style */
+    .custom-dropdown--white::before {
+        top: .5em; bottom: .5em;
+        background-color: #fff;
+        border-left: 1px solid rgba(0,0,0,.1);
+    }
+
+    .custom-dropdown--white::after {
+        color: rgba(0,0,0,.9);
+    }
+
+    /* FF only temp fix */
+    @-moz-document url-prefix() {
+        .custom-dropdown__select              { padding-right: .9em }
+        .custom-dropdown--large .custom-dropdown__select { padding-right: 1.3em }
+        .custom-dropdown--small .custom-dropdown__select { padding-right: .5em }
+    }
+}
+
+/**************************************************/
+/*************************************************/
+/************** Fil d'Ariane  *******************/
+/***********************************************/
+/**********************************************/
+
+.breadcrumb {
+    background-color: white;
+    color: black;
+    padding: 0;
+    font-size: 12px;
+    
+}
+
+.breadcrumb-item.active {
+    
+    color: black;
+    
+} 
+
+.container1 {
+    top: -50px;
+    margin-top : 15px;
+    padding: 0;
+}
+
+/**************************************************/
+/*************************************************/
+/************** Bloc Services  ******************/
+/***********************************************/
+/**********************************************/
+
+.corps {
+    
+    top: -50px;
+}
+
+@media (max-width: 576px) { 
+
+    .corps {
+    
+        top: 0px;
+    }
+
+}
+
+
+.card-img-top {
+    
+    border-radius: 0px;
+    text-align: center;
+}
+
+.card-img-top:hover {
+    opacity: .5;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.card {
+    text-align: center;
+    border-radius: 0px;
+    box-shadow: 1px 1px 10px #efefef;
+    border: none;
+}
+
+.caption {
+    
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border: 1px solid #efefef;
+    text-align: center;
+    
+}
+
+
+/**************************************************/
+/*************************************************/
+/********************** Picto3 ******************/
+/***********************************************/
+/**********************************************/
+
+.picto-3 {
+    
+    background-color: #a34d1f;
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    text-align: center;
+    top: -30px;
+} 
+
+#pq {
+    
+    padding-bottom: 40px;
+    
+}
+
+.picto1 {
+    
+    text-align: center;
+    
+}
+
+#Cnt {
+    
+    padding: 50px 50px;
+    text-align: center;
+}
+
+.nouscontacter {
+    
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.marginnouscontacter {
+    
+    margin-top: 30px;
+}
+
+.modal-body {
+    
+    text-align: left;
+}
+
+.form-control {
+    border-radius: 25px;
+    border: 0.5px solid #a34d1f;
+}
+
+.blue {
+    
+    color: #a34d1f;
+}
+
+/**************************************************/
+/*************************************************/
+/********************** Footer ******************/
+/***********************************************/
+/**********************************************/
+
+
+#moncercle{
+  background:#a34d1f;
+  border-radius:50%;
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  margin-left: 30px;
+  color: white;
+  padding: 5px;
+  padding-top: 13px;
+  font-weight: 600;
+}
+
+#moncercle:hover {
+  background:#683114;
+  font-weight: 600;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+footer p  {
+    
+    color: white;
+}
+
+.footer-bottom {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.copyright {
+    font-size: 14px;
+    display: inline-flex;
+}
+
+.copyright a {
+    padding-left: 40px;
+}
+
+#Suivez {
+    padding-left: 0;
+    margin-top: .8rem;
+    color: white;
+    display: table-cell; /* comportement visuel de cellule */
+    vertical-align: middle;
+}
+
+.footer-list {
+    
+    list-style-type: none;
+    color: white;
+    padding: 0;
+}
+
+#footerstyle {
+    margin-top: 50px;
+}
+
+footer {
+    
+    background-color: #a34d1f;
+    /*height: 500px;*/
+}
+
+.footer-top {
+    
+    background-color: black;
+}
+.reseau {
+    padding: 10px;
+}
+.social {
+    
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+ @media (max-width: 576px) { 
+
+    .copyright {
+    
+        display: inline-block;
+    
+}
+
+     .copyright a {
+         
+         padding-left: 15px;
+     }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+    .copyright {
+        display: inline-block;
+        padding-left: 15px;
+    }
+    
+     .copyright a {
+         display: block;
+         padding-left: 0px;
+         padding-right: 15px;
+     }
+    
+    
+}
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+      .copyright {
+        padding-left: 15px;
+        
+    }
+    
+     .copyright a {
+         display: block;
+         padding-left: 0px;
+         padding-right: 15px;
+     }
+    
+    
+}
+
+
+}
+
+
