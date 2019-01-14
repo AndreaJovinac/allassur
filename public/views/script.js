@@ -24,3 +24,5 @@ $(document).ready(function(){
         $(".dropdown-menu2").css("display", "none");
     });
 });
+
+// Rodrigue est passé par là!! (signature des hackers)
