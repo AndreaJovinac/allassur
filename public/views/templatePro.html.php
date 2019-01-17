@@ -247,8 +247,7 @@
                      </div>
                     <div class="container corps col-11">
                         <div class="row"> 
-                            {{content}}
-                            <!-- CONTENU !-->
+                            <?php echo($this->pageView); ?>
                             
                         </div>
                     </div>

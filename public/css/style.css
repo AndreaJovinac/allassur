@@ -466,10 +466,10 @@ a.navigation3 {
     --webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-    height: 3px;
     font-size: 14px;
     width: 100%;
     border: white;
+    height: 37px;
     
 }
 
@@ -488,7 +488,6 @@ a.navigation3 {
 
 .custom-dropdown__select{
     font-size: inherit; /* inherit size from .custom-dropdown */
-    padding: .5em; /* add some space*/
     margin: 0; /* remove default margins */
 }
 

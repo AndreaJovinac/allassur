@@ -133,7 +133,7 @@
                         </nav>
                      </div>
                         
-                    {{content}}
+                     <?php echo($this->pageView); ?>
                            
                         
                     </div>
