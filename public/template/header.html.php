@@ -7,7 +7,7 @@
     </div>
     <ul class="nav justify-content-end ppta col-6 float-right" style="margin-top: 50px;">
         <li class="nav-item">
-            <a id="partic" class="nav-link <?php if($ctrl->isParticulier()) echo('active'); ?>" href="/Allassur/index.php">
+            <a id="partic" class="nav-link <?php if($ctrl->isParticulier()) echo('active'); ?>" href="/Allassur/index.php?page=home">
                 PARTICULIER
                 <?php if($ctrl->isParticulier()) echo('<hr style="border-bottom: 3px solid #a34d1f; margin: 6px 0;">'); ?>
             </a>
@@ -28,13 +28,13 @@
     </div>
     <ul class="nav nav-pills nav-fill col-12" style="padding: 0;">
         <li class="nav-item">
-            <a class="nav-link active" href="/index.php">PARTICULIER</a>
+            <a class="nav-link <?php if($ctrl->isParticulier()) echo('active'); ?>"" href="/index.php?page=home">PARTICULIER</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="proff" href="/Allassur/index.php?page=professionnel">PROFESSIONNEL</a>
+            <a class="nav-link <?php if($ctrl->isPro()) echo('active'); ?>"" id="proff" href="/Allassur/index.php?page=professionnel">PROFESSIONNEL</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="proff" href="/Allassur/index.php?page=devis">FAIRE UN DEVIS</a>
+            <a class="nav-link <?php if($ctrl->isDevis()) echo('active'); ?>"" id="proff" href="/Allassur/index.php?page=devis">FAIRE UN DEVIS</a>
         </li>
     </ul>
 </nav>

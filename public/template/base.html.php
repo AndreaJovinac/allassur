@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="public/css/bootstrap.min.css" >
         <link rel="stylesheet" href="public/css/style.css" />
 
-        <title>All'Assur : Courtier en assurances</title>
+        <title>All'Assur : Courtier en assurances - <?php echo($ctrl->title); ?></title>
 
     </head>
     <body>
@@ -28,19 +28,19 @@
                             <h4>Courtier Assurances, du particulier au professionnel</h4>
                         </div>
                     </div>
-
                     <?php if(!$ctrl->isDevis()) require(__DIR__.'/search.html.php'); ?>
-                    <?php if(!$ctrl->isDevis())require(__DIR__.'/breadcrumb.html.php'); ?>
-
-                    <div class="container corps col-11">
-                        <div class="row">
-                            <?php require(__DIR__.'/../views/'.$ctrl->page.'.html.php'); ?>
-                        </div>
-                    </div>
+                </div>
+            </div>
+            <div class="container <?php if(!$ctrl->isDevis()) echo('corps'); ?> col-11"
+            <?php if($ctrl->isDevis()) echo('style="margin-top:30px"'); ?>>
+                <div class="row">
+                    <?php require(__DIR__.'/breadcrumb.html.php');?>
+                </div>
+                <div class="row">
+                    <?php require(__DIR__.'/../views/'.$ctrl->page.'.html.php');?>
                 </div>
             </div>
         </div>
-
         <?php if(!$ctrl->isDevis()) require(__DIR__.'/pre-footer.html.php'); ?>
         <?php require(__DIR__.'/footer.html.php'); ?>
 

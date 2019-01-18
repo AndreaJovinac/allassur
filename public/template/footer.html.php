@@ -1,5 +1,6 @@
 
-    <div class="container sac clearfix nouscontacter" id="contacterancre">
+    <div class="container sac clearfix nouscontacter" id="contacterancre" 
+        <?php if($ctrl->isDevis()) echo('style="border-top: 1px solid #efefef; margin-top: 40px;"'); ?> >
         <div class="container">
             <h3 id="Cnt col-lg-11" style="text-align: center;"> Vous désirez nous contacter ?</h3>
             <div class="row marginnouscontacter">

@@ -10,32 +10,18 @@
                                     </h5>
                                 
                                     <div class="float-right col-lg-6 col-sm-12 col-xs-12" style="padding: 0;"> 
-                                        <div class="checkbox col-lg-6 col-sm-12 col-xs-12" style="padding: 0;">                  
-                                                    <label><input type="radio" onclick="Change()" name="choice" value=""> Automobile</label>
-                                        </div>
-                                        <div class="checkbox col-lg-6 col-sm-12 col-xs-12" style="padding: 0;">
-                                                    <label><input type="radio" name="choice" id="choice" value=""> Moto</label>
-                                        </div>
-                                        <div class="checkbox col-lg-6 col-sm-12 col-xs-12" style="padding: 0;">
-                                                    <label><input type="radio" name="choice" id="choice" value=""> Habitation</label>
-                                        </div>
-                                        <div class="checkbox col-lg-6 col-sm-12 col-xs-12" style="padding: 0;" >
-                                                    <label><input type="radio" name="choice" id="choice" value=""> Chiens & Chats</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-sm-12 col-xs-12" style="padding: 0;"> 
-                                        <div class="checkbox  col-sm-12 col-xs-12" style="padding: 0;">                  
-                                                    <label><input type="radio" name="choice" id="choice"> Santé</label>
-                                        </div>
-                                        <div class="checkbox col-sm-12 col-xs-12" style="padding: 0;">
-                                                    <label><input type="radio" name="choice" id="choice" value=""> Mutuelle</label>
-                                        </div>
-                                        <div class="checkbox col-sm-12 col-xs-12" style="padding: 0;">
-                                                    <label><input type="radio" name="choice" id="choice" value=""> Prévoyance Santé</label>
-                                        </div>
-                                        <div class="checkbox col-sm-12 col-xs-12" style="padding: 0;">
-                                                    <label><input type="radio" name="choice" id="choice" value=""> Assurance Prêt</label>
-                                        </div>
+                                        <?php $index = 0;
+                                         foreach ($ctrl->choices as $key => $value) {
+                                             if($index*2 >= count($ctrl->choices)) {
+                                                echo('</div><div class="float-right col-lg-6 col-sm-12 col-xs-12" style="padding: 0;"> ');
+                                             }
+                                             $index = $index + 1;
+                                        ?>
+                                            <div class="checkbox col-lg-6 col-sm-12 col-xs-12" style="padding: 0;">                  
+                                                <label><input type="radio" name="choice" <?php if($ctrl->getSelectedDevis() == $key) echo('checked') ?> value="<?php echo($key); ?>"> <?php echo($value); ?></label>
+                                            </div>
+                                        <?php } ?>
+
                                         <p class="comments" style="color: red; margin-top: 5px;"></p>
                                     </div>
                                     <h5 style="margin-top: 20px; color: #a34d1f;"> 

@@ -1,14 +1,13 @@
 <?php
 namespace core;
 
+require __DIR__.'/Pages.php';
+
 class Controller {
     public $page;
+    public $title;
 
-    const AVAILABLE_PAGES = array('home','index','sante', 'mutuelle','prevoyance-sante','assurance-pret','automobile','moto','habitation','chiens-chats');
-    const AVAILABLE_DEVIS_PAGES = array('devis', 'devis2','a-propos','conseil','plan','cgv','mentions-legales');
-    const AVAILABLE_PRO_PAGES = array('homePro','professionnel','artisans','commercants','immobilier','m-services', 'm-sante','hotellerie','restauration','secteurs');
-
-    const AVAILAIBLE_DEVIS_CHOICES = array(
+    public $choices = array(
         "sante" => "Santé",
         "mutuelle" => "Mutuelle",
         "prevoyance" => "Prévoyance Santé",
@@ -26,20 +25,30 @@ class Controller {
     );
 
     public function __construct() {
-        $this->page = isset($_GET['page']) ? $_GET['page'] : self::AVAILABLE_PAGES[0];
+        $this->page = isset($_GET['page']) ? $_GET['page'] : Pages::$particulier['home'];
+        $this->title = $this->getTitle();
     }
     
     
-    public function isParticulier(Type $var = null) {
-        return isset($_GET['page']) && in_array($_GET['page'], self::AVAILABLE_PAGES);
+    public function isParticulier() {
+        return isset($_GET['page']) && array_key_exists($_GET['page'], Pages::$particulier);
     }
 
-    public function isPro(Type $var = null) {
-        return isset($_GET['page']) && in_array($_GET['page'], self::AVAILABLE_PRO_PAGES);
+    public function isPro() {
+        return isset($_GET['page']) && array_key_exists($_GET['page'], Pages::$pros);
     }
 
-    public function isDevis(Type $var = null) {
-        return isset($_GET['page']) && in_array($_GET['page'], self::AVAILABLE_DEVIS_PAGES);
+    public function isDevis() {
+        return isset($_GET['page']) && array_key_exists($_GET['page'], Pages::$devis);
+    }
+
+    public function getTitle() {
+        if($this->isParticulier())
+            return Pages::$particulier[$this->page];
+        if($this->isPro())
+            return Pages::$pros[$this->page];
+        if($this->isDevis())
+            return Pages::$devis[$this->page];
     }
 
     public function getSelectedDevis(){
