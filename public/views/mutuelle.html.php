@@ -1,4 +1,5 @@
-<h2 class="col-12" style="display: inline-block; padding: 0;">Prévoyance Santé</h2>
+<h2 class="col-12" style="display: inline-block; padding: 0;">Mutuelle</h2>
+<img src="img/secteur.png" alt="Autres Secteurs All'Assur" style="margin-top: 20px;"/>
 <p class="col-9" style="line-height: 24px; margin-top: 20px; font-size: 16px; padding: 0;"> 
 La prévoyance consiste à se couvrir contre tous les aléas de la vie liés à la personne, tant à titre particulier que professionnel (contrat collectif de prévoyance). La prévoyance couvre deux grands domaines de risques :
 les risques liés au décès, à l’incapacité, à l’invalidité, et à la dépendance, interrompant ou suspendant totalement l’activité professionnelle, et de fait les revenus de l’assuré ;

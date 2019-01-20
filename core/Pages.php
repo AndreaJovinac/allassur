@@ -9,9 +9,15 @@
         'prevoyance-sante' => 'Prévoyance Santé',
         'assurance-pret' => 'Assurance Prêt',
         'automobile' => 'Automobile',
+        'vtc' => 'VTC',
+        'taxi' => 'Taxi',
         'moto' => 'Moto',
         'habitation' => 'Habitation',
-        'chiens-chats' => 'Animaux'
+        'chiens-chats' => 'Chiens-Chats',
+        'obseques' => 'Obsèques',
+        'dependance' => 'Dépendance',
+        'retraite' => 'Retraite',
+        'flotte-automobile' => 'Flotte Automobile',
     );
     public static $devis = array(
         'devis' => 'Dévis',
@@ -27,12 +33,12 @@
         'professionnel' => 'Accueil',
         'artisans' => 'Artisans',
         'commercants' => 'Commerçants',
-        'immobilier' => 'Immobiliers',
-        'm-services' => 'Services', 
-        'm-sante' => 'Santé',
+        'immobilier' => 'Immobilier',
+        'm-services' => 'Métiers du Service', 
+        'm-sante' => ' Métiers de la Santé',
         'hotellerie' => 'Hotellerie',
         'restauration' => 'Restauration',
-        'secteurs' => 'Secteurs',
+        'secteurs' => 'Autres Secteurs',
     );
 
  }

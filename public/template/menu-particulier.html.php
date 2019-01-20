@@ -127,11 +127,11 @@
                 AUTOMOBILE <i class="fas fa-chevron-down"></i> </a>
             <div class="dropdown-menu dropdown-menu2" aria-labelledby="dLabel" id="#dLabel2">
                 <ul class="nav sousmenu">
-                    <li class="nav-item"><a class="dropdown-item" href="/Allassur/index.php?page=automobile">FLOTTE
-                            AUTOMOBILE </a> </li>
-                    <li class="nav-item"><a class="dropdown-item" href="/Allassur/index.php?page=automobile">VTC</a>
+                
+                    <li class="nav-item"><a class="dropdown-item" href="/Allassur/index.php?page=flotte-automobile"> FLOTTE AUTOMOBILE</a> </li>
+                    <li class="nav-item"><a class="dropdown-item" href="/Allassur/index.php?page=vtc">VTC</a>
                     </li>
-                    <li class="nav-item"><a class="dropdown-item" href="/Allassur/index.php?page=automobile">TAXI</a>
+                    <li class="nav-item"><a class="dropdown-item" href="/Allassur/index.php?page=taxi">TAXI</a>
                     </li>
                 </ul>
             </div>
