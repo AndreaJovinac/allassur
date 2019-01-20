@@ -38,7 +38,7 @@ $(document).ready(function(){
         
         $.ajax({
             type: 'POST',
-            url: 'contact.php',
+            url: $(this).data('action'),
             data: postdata,
             dataType: 'json',
             success: function(json) {
@@ -51,7 +51,9 @@ $(document).ready(function(){
                 else
                 {
                     $('#firstname + .comments').html(json.firstnameError);
-                    $('#choice + .comments').html(json.choiceError);
+                    $('#choice .comments').html(json.choiceError);
+                    $('#choicecontact .comments').html(json.choicecontactError);
+                    $('#sexe .comments').html(json.sexeError);
                     $('#firstname + .comments').html(json.firstnameError);
                     $('#firstname + .comments').html(json.firstnameError);
                     $('#name + .comments').html(json.nameError);

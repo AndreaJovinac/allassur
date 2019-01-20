@@ -1,6 +1,23 @@
 <?php
 
-    $array = array("firstname" => "", "name" => "", "email" => "", "phone" => "", "message" => "", "firstnameError" => "", "nameError" => "", "emailError" => "", "phoneError" => "", "messageError" => "", "choice" => "", "choiceError" => "", "sexe" => "", "sexeError" => "", "isSuccess" => false);
+    $array = array(
+        "firstname" => "",
+         "name" => "", 
+         "email" => "", 
+         "phone" => "", 
+         "message" => "", 
+         "firstnameError" => "", 
+         "nameError" => "", 
+         "emailError" => "", 
+         "phoneError" => "", 
+         "messageError" => "", 
+         "choice" => null, 
+         "choicecontact" => null,
+         "choicecontactError" => "",
+         "choiceError" => "", 
+         "sexe" => null, 
+         "sexeError" => "", 
+         "isSuccess" => false);
     $emailTo = "contact@jovinacandrea.fr";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") 
@@ -10,6 +27,7 @@
         $array["email"] = test_input($_POST["email"]);
         $array["phone"] = test_input($_POST["phone"]);
         $array["choice"] = test_input($_POST["choice"]);
+        $array["choicecontact"] = test_input($_POST["choicecontact"]);
         $array["sexe"] = test_input($_POST["sexe"]);
         
         
@@ -67,14 +85,14 @@
         
         
         
-        if (empty($array["phone"]))
+        if (empty($array["choicecontact"]))
         {
-            $array["phoneError"] = "Veuillez saisir votre numéro de téléphone, svp.";
+            $array["choicecontactError"] = "Veuillez sélectionner votre mode de contact, svp.";
             $array["isSuccess"] = false; 
         } 
         else
         {
-            
+            $emailText .= "Type de contact: {$array['choice']}\n";
         }
         
         

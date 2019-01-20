@@ -7,7 +7,7 @@ class Controller {
     public $page;
     public $title;
 
-    public $choices = array(
+    public $choicesParticulier = array(
         "sante" => "Santé",
         "mutuelle" => "Mutuelle",
         "prevoyance" => "Prévoyance Santé",
@@ -23,6 +23,25 @@ class Controller {
         "habitation" => "Habitation",
         "animaux" => "Chiens & Chats"
     );
+
+    public $choicesPro = array(
+        "sante" => "Santé",
+        "mutuelle" => "Mutuelle",
+        "prevoyance" => "Prévoyance Santé",
+        "obseque" => "Obsèques",
+        "dependance" => "Dépendance",
+        "retraite" => "Retraite",
+        "pret" => "Assurance Prêt",
+        "auto" => "Automobile",
+        "flotte" => "Flotte Automobile",
+        "vtc" => "VTC",
+        "taxi" => "Taxi",
+        "moto" => "Moto",
+        "habitation" => "Habitation",
+        "animaux" => "Chiens & Chats",
+        "Pro exple" => "Test pro"
+    );
+
 
     public function __construct() {
         $this->page = isset($_GET['page']) ? $_GET['page'] : 'home';
