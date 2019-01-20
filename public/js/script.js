@@ -51,6 +51,9 @@ $(document).ready(function(){
                 else
                 {
                     $('#firstname + .comments').html(json.firstnameError);
+                    $('#choice + .comments').html(json.choiceError);
+                    $('#firstname + .comments').html(json.firstnameError);
+                    $('#firstname + .comments').html(json.firstnameError);
                     $('#name + .comments').html(json.nameError);
                     $('#email + .comments').html(json.emailError);
                     $('#phone + .comments').html(json.phoneError);

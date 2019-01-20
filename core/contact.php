@@ -1,6 +1,19 @@
 <?php
 
-    $array = array("firstname" => "", "name" => "", "email" => "", "phone" => "", "message" => "", "firstnameError" => "", "nameError" => "", "emailError" => "", "phoneError" => "", "messageError" => "", "isSuccess" => false);
+    $array = array(
+        "firstname" => "", 
+        "name" => "", 
+        "email" => "",
+        "phone" => "", 
+        "message" => "", 
+        "choice" => null,
+        "firstnameError" => "", 
+        "nameError" => "", 
+        "emailError" => "", 
+        "phoneError" => "", 
+        "messageError" => "", 
+        "choiceError" => "", 
+        "isSuccess" => false);
     $emailTo = "contact@jovinacandrea.fr";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") 
@@ -9,8 +22,19 @@
         $array["name"] = test_input($_POST["name"]);
         $array["email"] = test_input($_POST["email"]);
         $array["phone"] = test_input($_POST["phone"]);
+        $array["choice"] =test_input($_POST["choice"]);
         $array["isSuccess"] = true; 
         $emailText = "";
+
+        if (empty($array["choice"]))
+        {
+            $array["choiceError"] = "Veuillez sélectionner votre type d'assurance";
+            $array["isSuccess"] = false; 
+        } 
+        else
+        {
+            $emailText .= "Type d'assurance : {$array['choice']}\n";
+        }
         
         if (empty($array["firstname"]))
         {
@@ -68,7 +92,8 @@
             mail($emailTo, "Site All'Assur : Un client demande à être appeler", $emailText, $headers);
         }
         
-        echo json_encode($array);
+        echo json_encode($_POST);
+        //json_encode($array);
         
     }
 

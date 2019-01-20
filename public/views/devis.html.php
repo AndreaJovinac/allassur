@@ -2,7 +2,7 @@
 
                             <h5> Pour faire une demande devis, nous vous invitons à remplir ce formulaire, afin que nous puissions vous contacter par téléphone ou par mail </h5>
                             <!--- MODIFICATION DU CONTENU coucpou!-->
-                            <form id="contact-form" method="post" action="" role="form" style="margin-top: 30px;" action="contactdevis.php">
+                            <form id="contact-form" method="post" action="" role="form" style="margin-top: 30px;" action="../../core/contactdevis.php">
                                 
                                 
                                     <h5 style="margin-bottom: 20px; color: #a34d1f;">
@@ -18,7 +18,7 @@
                                              $index = $index + 1;
                                         ?>
                                             <div class="checkbox col-lg-6 col-sm-12 col-xs-12" style="padding: 0;">                  
-                                                <label><input type="radio" name="choice" <?php if($ctrl->getSelectedDevis() == $key) echo('checked') ?> value="<?php echo($key); ?>"> <?php echo($value); ?></label>
+                                                <label><input type="radio" name="choice" id="choice" <?php if($ctrl->getSelectedDevis() == $key) echo('checked') ?> value="<?php echo($key); ?>"> <?php echo($value); ?></label>
                                             </div>
                                         <?php } ?>
 
@@ -29,11 +29,13 @@
                                     <div class=" col-lg-6 col-sm-12 col-xs-12" style="padding: 0;"> 
                                         
                                         <div class="checkbox col-sm-12 col-xs-12" style="padding: 0;">
-                                                    <label><input type="radio" name="choicecontact" id="choice" value=""> Mail </label>
+                                                    <label><input type="radio" name="choicecontact" id="choicecontact" value=""> Mail </label>
                                         </div>
                                         <div class="checkbox col-sm-12 col-xs-12" style="padding: 0;">
-                                                    <label><input type="radio" name="choicecontact" id="choice" value=""> Téléphone </label>
+                                                    <label><input type="radio" name="choicecontact" id="choicecontact" value=""> Téléphone </label>
                                         </div>
+                                        </div>
+                                        <p class="comments" style="color: red; margin-top: 5px;"></p>
                                     </div>
                                     
                                     <div class="" style="margin-bottom: 50px;"> 
