@@ -1,8 +1,7 @@
 <?php
 
-require './core/PageLoader.php';
+require './core/Controller.php';
 
-use \core\PageLoader;
-
-$pageLoader = new PageLoader();
-echo $pageLoader->getPageContent();
+use \core\Controller;
+$ctrl = new Controller();
+require( __DIR__.'/public/template/base.html.php');
