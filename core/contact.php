@@ -6,13 +6,11 @@
         "email" => "",
         "phone" => "", 
         "message" => "", 
-        "choice" => null,
         "firstnameError" => "", 
         "nameError" => "", 
         "emailError" => "", 
         "phoneError" => "", 
         "messageError" => "", 
-        "choiceError" => "", 
         "isSuccess" => false);
     $emailTo = "contact@jovinacandrea.fr";
 
@@ -26,16 +24,6 @@
         $array["isSuccess"] = true; 
         $emailText = "";
 
-        if (empty($array["choice"]))
-        {
-            $array["choiceError"] = "Veuillez sélectionner votre type d'assurance";
-            $array["isSuccess"] = false; 
-        } 
-        else
-        {
-            $emailText .= "Type d'assurance : {$array['choice']}\n";
-        }
-        
         if (empty($array["firstname"]))
         {
             $array["firstnameError"] = "Veuillez saisir votre prénom, svp.";
