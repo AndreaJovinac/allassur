@@ -25,21 +25,21 @@ class Controller {
     );
 
     public function __construct() {
-        $this->page = isset($_GET['page']) ? $_GET['page'] : Pages::$particulier['home'];
+        $this->page = isset($_GET['page']) ? $_GET['page'] : 'home';
         $this->title = $this->getTitle();
     }
     
     
     public function isParticulier() {
-        return isset($_GET['page']) && array_key_exists($_GET['page'], Pages::$particulier);
+        return array_key_exists($this->page, Pages::$particulier);
     }
 
     public function isPro() {
-        return isset($_GET['page']) && array_key_exists($_GET['page'], Pages::$pros);
+        return isset($this->page) && array_key_exists($this->page, Pages::$pros);
     }
 
     public function isDevis() {
-        return isset($_GET['page']) && array_key_exists($_GET['page'], Pages::$devis);
+        return array_key_exists($this->page, Pages::$devis);
     }
 
     public function getTitle() {
