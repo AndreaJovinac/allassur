@@ -20,7 +20,8 @@
             <div class="container">
                 <div class="row">
 
-                    <?php if(!$ctrl->isDevis()) require(__DIR__.'/menu.html.php'); ?>
+                    <?php if($ctrl->isParticulier()) require(__DIR__.'/menu-particulier.html.php'); ?>
+                    <?php if($ctrl->isPro()) require(__DIR__.'/menu-pro.html.php'); ?>
 
                     <div class="jumbotron jumbotron2 container d-none d-sm-block">
                         <div class="content-jumbotron container col-11">
