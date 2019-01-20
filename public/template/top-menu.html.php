@@ -11,7 +11,7 @@
                     <a class="nav-link" href="/Allassur/index.php?page=a-propos"> À propos d'All'Assur</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/Allassur/index.php?page=devis"> Faire un devis</a>
+                    <a class="nav-link" href="/Allassur/index.php?page=devis<?php if($ctrl->isPro()) echo('2'); ?>"> Faire un devis</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contacterancre" id="contactnoir"> Contact</a>
