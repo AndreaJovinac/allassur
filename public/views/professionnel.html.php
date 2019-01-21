@@ -39,7 +39,7 @@
                               <div class="card-body">
                                 <h3 class="card-title">METIERS DU SERVICE</h3>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="/Allassur/index.php?page=m-service" class="btn btn-default">Découvrez l'offre</a>
+                                <a href="/Allassur/index.php?page=m-services" class="btn btn-default">Découvrez l'offre</a>
                               </div>
                             </div>
                         

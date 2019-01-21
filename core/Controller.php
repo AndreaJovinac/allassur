@@ -25,21 +25,14 @@ class Controller {
     );
 
     public $choicesPro = array(
-        "sante" => "Santé",
-        "mutuelle" => "Mutuelle",
-        "prevoyance" => "Prévoyance Santé",
-        "obseque" => "Obsèques",
-        "dependance" => "Dépendance",
-        "retraite" => "Retraite",
-        "pret" => "Assurance Prêt",
-        "auto" => "Automobile",
-        "flotte" => "Flotte Automobile",
-        "vtc" => "VTC",
-        "taxi" => "Taxi",
-        "moto" => "Moto",
-        "habitation" => "Habitation",
-        "animaux" => "Chiens & Chats",
-        "Pro exple" => "Test pro"
+        "artisans" => "Artisans et BTP",
+        "commercants" => "Commerçants",
+        "immobilier" => "Immobilier",
+        "metiersservices" => "Métiers du Service",
+        "metiersanté" => "Métiers de la Santé",
+        "hotellerie" => "Hotellerie",
+        "restauration" => "Restauration",
+        "autressecteurs" => "Autres Secteurs",
     );
 
 

@@ -1,5 +1,5 @@
 <h2 class="col-12" style="display: inline-block; padding: 0;">À propos </h2>
-<p class="col-lg-9 col-md-12 col-ms-12" style="line-height: 24px; margin-top: 20px; font-size: 16px; padding: 0;"> 
+<p class="col-lg-9 col-md-12 col-ms-12" style="line-height: 24px; margin-top: 20px; margin-bottom: 50px; font-size: 16px; padding: 0;"> 
 All ‘Assur est un courtier en assurance, qui a pour rôle de vous aider à choisir le contrat qui correspondra le mieux à votre profil, c'est à dire à vos besoins et votre budget. Pour cela il sélectionne plusieurs contrats, parmi ceux qu'il propose, afin de vous faciliter un fastidieux comparatif.
 Il analyse avec vous les contrats, il vous conseille et vous aide à bien comprendre vos garanties.
 Il est également votre conseiller référent, ce qui facilite la gestion du contrat. Votre courtier All’ Assur sera bien plus facilement joignable que le téléconseiller d’une plate-forme avec qui vous n’aurez jamais eu de contact.

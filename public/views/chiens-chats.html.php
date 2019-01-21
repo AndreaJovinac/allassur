@@ -1,4 +1,5 @@
 <h2 class="col-12" style="display: inline-block; padding: 0;">Chiens & Chats</h2>
+<img src="img/chienschats.png" class="d-none d-lg-block d-md-block" alt="Artisans-All'Assur" style="margin-top: 20px;"/>
 <p class="col-9" style="line-height: 24px; margin-top: 20px; font-size: 16px; padding: 0;"> 
 L’assurance chien ou chat fonctionne comme une assurance classique. Autour de plusieurs formules, elle sert à prendre un relais financier lorsqu’un animal de compagnie a besoin de soins ou même lorsqu’il cause des dommages à un tiers. Et cela peut être aussi utile pour Milou qui a besoin de soins importants... ou pour Minou qui a fait tomber des objets de collection !
 Les différentes formules d’assurances pour les animaux :

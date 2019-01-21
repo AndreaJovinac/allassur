@@ -3,14 +3,14 @@
 <h5> Pour faire une demande devis, nous vous invitons à remplir ce formulaire, afin que nous puissions vous contacter
     par téléphone ou par mail </h5>
 <!--- MODIFICATION DU CONTENU!-->
-<form id="contact-form" method="post" role="form" style="margin-top: 30px;" data-action="../../core/contactdevis.php">
+<form id="contact-form" method="post" role="form" style="margin-top: 30px;" data-action="../../Allassur/core/contactdevis.php">
 
 
     <h5 style="margin-bottom: 20px; color: #a34d1f;">
         <strong> 1) Sélectionner le type d'Assurance que vous souhaitez <span class="blue">*</span> : </strong>
     </h5>
     <div id="choice">
-        <div class="float-right col-lg-6 col-sm-12 col-xs-12" style="padding: 0;">
+        <div class="float-right col-lg-6 col-sm-12 col-xs-12" style="padding: 0; display : none;">
             <?php 
                 $index = 0;
                 foreach ($ctrl->choicesPro as $key => $value) {
@@ -33,12 +33,12 @@
             </div>
             <?php } ?>
         </div>
-        <p class="comments" style="color: red; margin-top: 5px;"></p>
+        <p class="comments" style="color: red; clear: both;"></p>
     </div>
     
-    <h5 style="margin-top: 20px; color: #a34d1f;"><strong>2) Vous désirez être contacter par <span class="blue">*</span> : </strong> </h5>
+    
     <div id="choicecontact" class=" col-lg-6 col-sm-12 col-xs-12" style="padding: 0;">
-
+        <h5 style="margin-top: 20px; color: #a34d1f; margin-top: 20px; "><strong>2) Vous désirez être contacter par <span class="blue">*</span> : </strong> </h5>
         <div class="checkbox col-sm-12 col-xs-12" style="padding: 0;">
             <label><input type="radio" name="choicecontact" value="Mail"> Mail </label>
         </div>

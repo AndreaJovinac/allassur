@@ -20,17 +20,17 @@
         'flotte-automobile' => 'Flotte Automobile',
     );
     public static $devis = array(
-        'devis' => 'Dévis',
-        'devis2' => 'Dévis',
-        'a-propos' => 'A propos',
-        'conseil' => 'Conseil',
-        'plan' => 'Plan'
+        'devis' => 'Devis Particulier',
+        'devis2' => 'Devis Professionnel',
+        'a-propos' => 'À propos',
+        'conseil' => 'Un Conseil ?',
+        'plan' => 'Plan du site'
         ,'cgv' => 'CGV',
         'mentions-legales' => 'Mentions Légales'
     );
     public static $pros = array(
-        'homePro' => 'Accueil',
-        'professionnel' => 'Accueil',
+        'homePro' => 'Accueil : Particulier',
+        'professionnel' => 'Accueil : Particulier',
         'artisans' => 'Artisans',
         'commercants' => 'Commerçants',
         'immobilier' => 'Immobilier',

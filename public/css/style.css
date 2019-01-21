@@ -162,7 +162,7 @@ input[type="radio"] {
 /**************************************/
 
 #partic {
-    
+    color: black;
     margin-right: 60px;
 }
 
@@ -234,14 +234,37 @@ input[type="radio"] {
     background-color: black;
     padding: 20px;
     font-size: 23px;
+    
 }
+.nav-link.active {
+    color: white;
+}
+
 #proff {
-    color: black;
     padding: 20px;
     font-size: 23px;
     border-bottom : 0.5px solid #a34d1f;
     border-radius: 0px;
 }
+
+.proffpage {
+    color: black;
+    padding: 20px;
+    font-size: 23px;
+    border-bottom : 0.5px solid #a34d1f;
+
+}
+.proffpage:hover {
+    color: black;
+
+}
+.activepage {
+    color: white;
+    border-radius: 0px;
+}
+.nav-item {
+    
+    }
 /**************************************************/
 /*************************************************/
 /*** Menu : NavBar des Services Particulier *****/
@@ -312,7 +335,7 @@ input[type="radio"] {
     font-size: 20px;
     display: block;
     background-color: #683114;
-    color: white;
+
 }
 
 .navigation-toogle3 {

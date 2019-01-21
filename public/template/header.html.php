@@ -28,13 +28,13 @@
     </div>
     <ul class="nav nav-pills nav-fill col-12" style="padding: 0;">
         <li class="nav-item">
-            <a class="nav-link <?php if($ctrl->isParticulier()) echo('active'); ?>"" href="/index.php?page=home">PARTICULIER</a>
+            <a class="nav-link proffpage <?php if($ctrl->isParticulier()) echo('active'); ?>"  href="/Allassur/index.php?page=home">PARTICULIER</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link <?php if($ctrl->isPro()) echo('active'); ?>"" id="proff" href="/Allassur/index.php?page=professionnel">PROFESSIONNEL</a>
+            <a class="nav-link proffpage <?php if($ctrl->isPro()) echo('active'); ?>" href="/Allassur/index.php?page=professionnel">PROFESSIONNEL</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link <?php if($ctrl->isDevis()) echo('active'); ?>"" id="proff" href="/Allassur/index.php?page=devis">FAIRE UN DEVIS</a>
+            <a class="nav-link proffpage <?php if($ctrl->isDevis()) echo('active'); ?>"  href="/Allassur/index.php?page=devis">FAIRE UN DEVIS</a>
         </li>
     </ul>
 </nav>
