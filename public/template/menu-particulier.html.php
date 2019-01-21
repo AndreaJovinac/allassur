@@ -77,7 +77,7 @@
         </ul>
     </div>
 </nav>
-<div class="" style="color: white;"> &nbsp;</div>
+<div class="d-md-none d-sm-none" style="color: white;"> &nbsp;</div>
 <!---  MENU  !-->
 <nav class="navbar navbar container navigation3 d-none d-lg-none d-md-none d-lg-block">
     <ul class="nav navmaron">

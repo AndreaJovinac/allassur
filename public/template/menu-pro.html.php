@@ -44,7 +44,7 @@
     </ul>
   </div>
 </nav>
-<div class="" style="color: white;"> &nbsp;</div>
+<div class="d-md-none d-sm-none" style="color: white;"> &nbsp;</div>
 
 <nav class="navbar navbar container navigation3 d-none d-lg-none d-md-none d-lg-block" style="background-color: black;">
   <ul class="nav navmaron">

@@ -86,10 +86,7 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="modal-body">
-                                            <h6> Vous souhaitez être rappelé par un de nos conseillers, pour cela il
-                                                vous suffit de remplir ce formulaire de contact. Un de vos conseiller
-                                                va vous contacter par téléphone.</h6>
-                                            <form id="contact-form" method="post" action="../Allassur/core/contact.php" role="form" style="margin-top: 30px;">
+                                            <form id="contact-form" method="post" action="../../Allassur/core/contact.php" role="form" style="">
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <label for="firstname">Prénom<span class="blue">*</span></label>
