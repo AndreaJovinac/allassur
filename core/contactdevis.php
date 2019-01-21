@@ -29,6 +29,7 @@
         $array["choice"] = test_input($_POST["choice"]);
         $array["choicecontact"] = test_input($_POST["choicecontact"]);
         $array["sexe"] = test_input($_POST["sexe"]);
+        $array["message"] = test_input($_POST["message"]);
         
         
         $array["isSuccess"] = true; 
@@ -92,7 +93,7 @@
         } 
         else
         {
-            $emailText .= "Type de contact: {$array['choice']}\n";
+            $emailText .= "Cette personne veut être contacter par: {$array['choicecontact']}\n";
         }
         
         
@@ -106,7 +107,7 @@
         } 
         else
         {
-            $emailText .= "Type d'Assurance: {$array['choice']}\n";
+            $emailText .= "Cette personne a choisi cette assurance : {$array['choice']}\n";
         }
         
         
@@ -119,15 +120,25 @@
         } 
         else
         {
-            $emailText .= "Sexe de la personne: {$array['sexe']}\n";
+            $emailText .= "Cette personne est un(e): {$array['sexe']}\n";
         }
         
         
         
+          if (empty($array["message"]))
+        {
+            $array["isSuccess"] = true; 
+        } 
+        else
+        {
+            $emailText .= "Message: {$array['message']}\n";
+        }
+
+                
         
         if($array["isSuccess"]) 
         {
-            $headers = "From: {$array['Prénom']} {$array['Nom']}  <{$array['email']}>\r\nReply-To: {$array['email']} {$array['choice']} {$array['sexe']}";
+            $headers = "From: {$array['Prénom']} {$array['Nom']}  <{$array['email']}>\r\nReply-To: {$array['email']}";
             mail($emailTo, "Demande de devis ", $emailText, $headers);
         }
         

@@ -91,8 +91,8 @@
         </div>
 
         <div class="form-group">
-            <label for="comment">Message<span class="blue">*</span> </label>
-            <textarea class="form-control" rows="10" id="comment" style="height: 150px;" placeholder="Votre Message"></textarea>
+            <label for="message">Message </label>
+            <textarea id="message" name="message" class="form-control" rows="10" id="comment" style="height: 150px;" placeholder="Votre Message"></textarea>
         </div>
         <div class="">
             <p class="blue" style="padding-top: 10px;"><strong>* Ces informations sont requises.</strong></p>
