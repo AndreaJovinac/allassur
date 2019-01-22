@@ -5,14 +5,17 @@
          "name" => "", 
          "email" => "", 
          "phone" => "", 
-         "message" => "", 
+         "message" => "",
+         "sociale" => "",
+         "siret" => "", 
+         "siretError" => "",    
          "firstnameError" => "", 
          "nameError" => "", 
          "emailError" => "", 
          "phoneError" => "", 
          "messageError" => "", 
          "choice" => null, 
-         "choicecontact" => null,
+         "statut" => null,
          "choicecontactError" => "",
          "choiceError" => "", 
          "sexe" => null, 
@@ -27,9 +30,11 @@
         $array["email"] = test_input($_POST["email"]);
         $array["phone"] = test_input($_POST["phone"]);
         $array["choice"] = test_input($_POST["choice"]);
-        $array["choicecontact"] = test_input($_POST["choicecontact"]);
+        $array["statut"] = test_input($_POST["statut"]);
         $array["sexe"] = test_input($_POST["sexe"]);
         $array["message"] = test_input($_POST["message"]);
+        $array["sociale"] = test_input($_POST["sociale"]);
+        $array["siret"] = test_input($_POST["siret"]);
         
         
         $array["isSuccess"] = true; 
@@ -86,14 +91,14 @@
         
         
         
-        if (empty($array["choicecontact"]))
+        if (empty($array["statut"]))
         {
-            $array["choicecontactError"] = "Veuillez sélectionner votre mode de contact, svp.";
+            $array["choicecontactError"] = "Veuillez sélectionner votre statut svp.";
             $array["isSuccess"] = false; 
         } 
         else
         {
-            $emailText .= "Cette personne veut être contacter par: {$array['choicecontact']}\n";
+            $emailText .= "Statut: {$array['statut']}\n";
         }
         
         
@@ -110,6 +115,15 @@
             $emailText .= "Cette personne a choisi cette assurance : {$array['choice']}\n";
         }
         
+        if (empty($array["siret"]))
+        {
+            $array["siretError"] = "Veuillez sélectionner un type d'assurance, svp";
+            $array["isSuccess"] = false; 
+        } 
+        else
+        {
+            $emailText .= "Numero de SIRET : {$array['siret']}\n";
+        }
         
         
         
@@ -132,6 +146,15 @@
         else
         {
             $emailText .= "Message: {$array['message']}\n";
+        }
+
+        if (empty($array["sociale"]))
+        {
+            $array["isSuccess"] = true; 
+        } 
+        else
+        {
+            $emailText .= "Raison Sociale: {$array['sociale']}\n";
         }
 
                 

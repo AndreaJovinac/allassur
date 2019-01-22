@@ -40,22 +40,10 @@
         </div>
         <p class="comments" style="color: red; margin-top: 5px; clear: both;"></p>
     </div>
-    
-    <h5 style="margin-top: 20px; color: #a34d1f;"><strong>2) Vous désirez être contacter par <span class="blue">*</span> : </strong> </h5>
-    <div id="choicecontact" class=" col-lg-6 col-sm-12 col-xs-12" style="padding: 0;">
-
-        <div class="checkbox col-sm-12 col-xs-12" style="padding: 0;">
-            <label><input type="radio" name="choicecontact" value="Mail"> Mail </label>
-        </div>
-        <div class="checkbox col-sm-12 col-xs-12" style="padding: 0;">
-            <label><input type="radio" name="choicecontact" value="Mail"> Téléphone </label>
-        </div>
-        <p class="comments" style="color: red; margin-top: 5px;"></p>
-    </div>
 
     <div class="" style="margin-bottom: 50px;">
         <h5 class="" style="margin-top: 30px; margin-bottom: 20px; color: #a34d1f;">
-            <strong> 3) Remplissez vos donnés personnelles et votre message :</strong>
+            <strong> 2) Remplissez vos donnés personnelles et votre message :</strong>
         </h5>
 
         <div id="sexe" class=" col-lg-6 col-sm-12 col-xs-12" style="padding: 0; margin-bottom: 15px;">
@@ -85,6 +73,16 @@
             <p class="comments" style="color: red; margin-top: 5px;"></p>
         </div>
         <div class="">
+            <label for="example-date-input" class="">Date <span class="blue">*</span></label>
+                <input class="form-control" type="date" value="2019-01-01" id="example-date-input">
+                <p class="comments" style="color: red; margin-top: 5px;"></p>  
+        </div>
+        <div class="">
+            <label for="phone">Code Postale<span class="blue">*</span></label>
+            <input id="phone" type="tel" name="phone" maxlenght="10" size="10" class="form-control" placeholder="Votre Code Postale">
+            <p class="comments" style="color: red; margin-top: 5px;"></p>
+        </div>
+        <div class="">
             <label for="phone">Téléphone<span class="blue">*</span></label>
             <input id="phone" type="tel" name="phone" maxlenght="10" size="10" class="form-control" placeholder="Votre Téléphone">
             <p class="comments" style="color: red; margin-top: 5px;"></p>
@@ -99,7 +97,6 @@
         </div>
         <div class="">
             <input type="submit" class="button1 btn" value="Envoyer">
-
         </div>
 
     </div>

@@ -6,9 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous">
-
         <link rel="stylesheet" href="public/css/bootstrap.min.css" >
         <link rel="stylesheet" href="public/css/style.css" />
+        <script src="https://unpkg.com/gijgo@1.9.11/js/gijgo.min.js" type="text/javascript"></script>
+        <link href="https://unpkg.com/gijgo@1.9.11/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 
         <title>All'Assur : Courtier en assurances - <?php echo($ctrl->title); ?></title>
 

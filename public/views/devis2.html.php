@@ -38,31 +38,69 @@
     
     
     <div id="choicecontact" class=" col-lg-6 col-sm-12 col-xs-12" style="padding: 0;">
-        <h5 style="margin-top: 20px; color: #a34d1f; margin-top: 20px; "><strong>2) Vous désirez être contacter par <span class="blue">*</span> : </strong> </h5>
+        <h5 style="margin-top: 20px; color: #a34d1f; margin-top: 20px; "><strong>2) Quel est votre statut ? <span class="blue">*</span> : </strong> </h5>
         <div class="checkbox col-sm-12 col-xs-12" style="padding: 0;">
-            <label><input type="radio" name="choicecontact" value="Mail"> Mail </label>
+            <label><input type="radio" name="statut" value="statut"> SAS </label>
         </div>
         <div class="checkbox col-sm-12 col-xs-12" style="padding: 0;">
-            <label><input type="radio" name="choicecontact" value="Mail"> Téléphone </label>
+            <label><input type="radio" name="statut" value="statut"> SASU</label>
+        </div>
+        <div class="checkbox col-sm-12 col-xs-12" style="padding: 0;">
+            <label><input type="radio" name="statut" value="statut"> SARL </label>
+        </div>
+        <div class="checkbox col-sm-12 col-xs-12" style="padding: 0;">
+            <label><input type="radio" name="statut" value="statut"> EIRL </label>
+        </div>
+        <div class="checkbox col-sm-12 col-xs-12" style="padding: 0;">
+            <label><input type="radio" name="statut" value="statut"> EURL </label>
+        </div>
+        <div class="checkbox col-sm-12 col-xs-12" style="padding: 0;">
+            <label><input type="radio" name="statut" value="statut"> SCI </label>
+        </div>
+        <div class="checkbox col-sm-12 col-xs-12" style="padding: 0;">
+            <label><input type="radio" name="statut" value="statut"> Entreprise Individuelle (Auto-Entrepreneur) </label>
         </div>
         <p class="comments" style="color: red; margin-top: 5px;"></p>
     </div>
-
     <div class="" style="margin-bottom: 50px;">
         <h5 class="" style="margin-top: 30px; margin-bottom: 20px; color: #a34d1f;">
-            <strong> 3) Remplissez vos donnés personnelles et votre message :</strong>
+            <strong> 3) Remplissez les informations corespondant à votre entreprise :</strong>
         </h5>
-
-        <div id="sexe" class=" col-lg-6 col-sm-12 col-xs-12" style="padding: 0; margin-bottom: 15px;">
-            <h5 class="" style="margin-top: 30px; margin-bottom: 20px;"><strong> Vous êtes <span class="blue">*</span>: </strong> </h5>
-            <div class="checkbox float-right col-sm-6 col-xs-12 col-lg-6" style="padding: 0;">
-                <label><input type="radio" name="sexe" value="Femme"> Femme </label>
-            </div>
-            <div class="checkbox col-sm-6 col-xs-12 col-lg-6" style="padding: 0;">
-                <label><input type="radio" name="sexe" value="Homme"> Homme </label>
-            </div>
+        <div class="">
+            <label for="sociale">Raison sociale</label>
+            <input id="sociale" type="text" name="sociale" class="form-control" placeholder="Votre raison sociale">
             <p class="comments" style="color: red; margin-top: 5px;"></p>
         </div>
+        <div class="">
+            <label for="siret">Numéro de SIRET<span class="blue">*</span></label>
+            <input id="siret" type="number" name="siret" class="form-control" placeholder="Votre numéro de Siret">
+            <p class="comments" style="color: red; margin-top: 5px;"></p>
+        </div>
+        <div class="">
+            <label for="affaires">Chiffres d'Affaires</label>
+            <input id="affaires" type="number" name="affaires" class="form-control" placeholder="Votre chiffre d'affaire">
+            <p class="comments" style="color: red; margin-top: 5px;"></p>
+        </div>
+    </div> 
+    <div class="" style="margin-bottom: 50px;">
+        <h5 class="" style="margin-top: 30px; margin-bottom: 20px; color: #a34d1f;">
+            <strong> 4) Êtes-vous déjà assurer ? Si oui :</strong>
+        </h5>
+        <div class="">
+            <label for="compagnie">Nom de la compagnie d'assurance</label>
+            <input id="compagnie" type="text" name="compagnie" class="form-control" placeholder="Le nom de la compagnie d'assurance">
+            <p class="comments" style="color: red; margin-top: 5px;"></p>
+        </div>
+        <div class="">
+            <label for="prime">Prime actuelle</label>
+            <input id="prime" type="text" name="prime" class="form-control" placeholder="Votre prénom">
+            <p class="comments" style="color: red; margin-top: 5px;"></p>
+        </div>
+    </div>                    
+    <div class="" style="margin-bottom: 50px;">
+        <h5 class="" style="margin-top: 30px; margin-bottom: 20px; color: #a34d1f;">
+            <strong> 5) Remplissez vos donnés personnelles et votre message :</strong>
+        </h5>
 
         <div class="">
             <label for="firstname">Prénom<span class="blue">*</span></label>
@@ -72,6 +110,11 @@
         <div class="">
             <label for="name">Nom<span class="blue">*</span></label>
             <input id="name" type="text" name="name" class="form-control" placeholder="Votre Nom">
+            <p class="comments" style="color: red; margin-top: 5px;"></p>
+        </div>
+        <div class="">
+            <label for="activite">Domaine d'activité<span class="blue">*</span></label>
+            <input id="activite" type="text" name="activite" class="form-control" placeholder="Votre activité">
             <p class="comments" style="color: red; margin-top: 5px;"></p>
         </div>
         <div class="">
