@@ -118,6 +118,12 @@ a:hover {
 	cursor: pointer;
 	display: none;
 }
+
+input[type=radio]:checked + label:before {
+    background: #fb8819;
+    border-color: #fb8819;
+    box-shadow: inset 0px 0px 0px 2px #fff;
+}
 /*
 input[type="radio"] {
     display:none !important;
@@ -859,6 +865,6 @@ footer {
 }
 
 
-}
+
 
 

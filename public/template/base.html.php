@@ -8,8 +8,6 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous">
         <link rel="stylesheet" href="public/css/bootstrap.min.css" >
         <link rel="stylesheet" href="public/css/style.css" />
-        <script src="https://unpkg.com/gijgo@1.9.11/js/gijgo.min.js" type="text/javascript"></script>
-        <link href="https://unpkg.com/gijgo@1.9.11/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 
         <title>All'Assur : Courtier en assurances - <?php echo($ctrl->title); ?></title>
 
@@ -25,8 +23,8 @@
                     <?php if($ctrl->isPro()) require(__DIR__.'/menu-pro.html.php'); ?>
 
                     <div class="jumbotron jumbotron2 container d-none d-sm-block">
-                        <div class="content-jumbotron container col-11">
-                            <h1>ALL'ASSUR</h1>
+                        <div class="content-jumbotron container col-11" style="margin-top: 20px;">
+                            <h1><b> ALL'ASSUR</b></h1>
                             <h4>Courtier Assurances, du particulier au professionnel</h4>
                         </div>
                     </div>

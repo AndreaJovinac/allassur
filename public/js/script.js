@@ -45,20 +45,21 @@ $(document).ready(function(){
                  
                 if(json.isSuccess) 
                 {
-                    $('#contact-form').append("<p class='thank-you' style='color:red; padding: 10px; margin-top: 30px; font-size: 24px; text-align: center; color: white; background-color: #683114;'>Votre message a bien été envoyé. Merci de nous avoir contacté :)</p>");
+                    $('#contact-form').append("<p class='thank-you' style='color:red; padding: 10px; margin-top: 30px; font-size: 24px; text-align: center; color: white; background-color: #683114;'>Merci d'avoir rempli ce formulaire de demande de devis.<br/> Vous recevrez votre devis par mail dans peu de jours.</p>");
                     $('#contact-form')[0].reset();
                 }
                 else
                 {
                     $('#firstname + .comments').html(json.firstnameError);
                     $('#choice .comments').html(json.choiceError);
-                    $('#choicecontact .comments').html(json.choicecontactError);
                     $('#sexe .comments').html(json.sexeError);
-                    $('#firstname + .comments').html(json.firstnameError);
-                    $('#firstname + .comments').html(json.firstnameError);
                     $('#name + .comments').html(json.nameError);
                     $('#email + .comments').html(json.emailError);
                     $('#phone + .comments').html(json.phoneError);
+                    $('#date + .comments').html(json.dateError);
+                    $('#postale + .comments').html(json.postaleError);
+                    $('#siret + .comments').html(json.siretError);
+                    $('#statut + .comments').html(json.statutError);
                     
                 }                
             }

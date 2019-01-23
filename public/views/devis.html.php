@@ -1,9 +1,7 @@
 <h2 style="margin: 30px 0px 30px 0px;"> Demande de devis : Particulier </h2>
 
-<h5> Pour faire une demande devis, nous vous invitons à remplir ce formulaire, afin que nous puissions vous contacter
-    par téléphone ou par mail </h5>
 <!--- MODIFICATION DU CONTENU!-->
-<form id="contact-form" method="post" role="form" style="margin-top: 30px;" data-action="../../Allassur/core/contactdevis.php">
+<form id="contact-form" method="post" role="form" style="margin-top: 10px;" data-action="../../Allassur/core/contactdevis.php">
 
 
     <h5 style="margin-bottom: 20px; color: #a34d1f;">
@@ -47,7 +45,7 @@
         </h5>
 
         <div id="sexe" class=" col-lg-6 col-sm-12 col-xs-12" style="padding: 0; margin-bottom: 15px;">
-            <h5 class="" style="margin-top: 30px; margin-bottom: 20px;"><strong> Vous êtes <span class="blue">*</span>: </strong> </h5>
+            <h5 class="" style="margin-top: 30px; margin-bottom: 20px;"><strong> Vous êtes<span class="blue">*</span> : </strong> </h5>
             <div class="checkbox float-right col-sm-6 col-xs-12 col-lg-6" style="padding: 0;">
                 <label><input type="radio" name="sexe" value="Femme"> Femme </label>
             </div>
@@ -69,17 +67,17 @@
         </div>
         <div class="">
             <label for="email">Email<span class="blue">*</span></label>
-            <input id="email" type="text" name="email" class="form-control" placeholder="Votre Email">
+            <input id="email" type="email" name="email" class="form-control" placeholder="Votre Email">
             <p class="comments" style="color: red; margin-top: 5px;"></p>
         </div>
         <div class="">
-            <label for="example-date-input" class="">Date <span class="blue">*</span></label>
-                <input class="form-control" type="date" value="2019-01-01" id="example-date-input">
-                <p class="comments" style="color: red; margin-top: 5px;"></p>  
+            <label for="date" class="">Date de naissance<span class="blue">*</span></label>
+            <input class="form-control" name="date" type="date" value="2019-01-01" id="date">
+            <p class="comments" style="color: red; margin-top: 5px;"></p>  
         </div>
         <div class="">
-            <label for="phone">Code Postale<span class="blue">*</span></label>
-            <input id="phone" type="tel" name="phone" maxlenght="10" size="10" class="form-control" placeholder="Votre Code Postale">
+            <label for="postale">Code Postale<span class="blue">*</span></label>
+            <input id="postale" type="text" name="postale" maxlenght="5" size="5" class="form-control" placeholder="Votre Code Postale">
             <p class="comments" style="color: red; margin-top: 5px;"></p>
         </div>
         <div class="">

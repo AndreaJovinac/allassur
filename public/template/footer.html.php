@@ -86,7 +86,7 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="modal-body">
-                                            <form id="contact-form" method="post" action="../../Allassur/core/contact.php" role="form" style="">
+                                        <form id="contact-form" method="post" role="form" style="" data-action="../../Allassur/core/contact.php">
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <label for="firstname">Prénom<span class="blue">*</span></label>

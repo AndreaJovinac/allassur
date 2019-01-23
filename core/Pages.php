@@ -3,7 +3,7 @@
 
  class Pages {
     public static $particulier = array(
-        'home' => 'Accueil',
+        'home' => 'Particulier',
         'sante' => 'Santé', 
         'mutuelle' => 'Mutuelle',
         'prevoyance-sante' => 'Prévoyance Santé',
@@ -24,13 +24,13 @@
         'devis2' => 'Devis Professionnel',
         'a-propos' => 'À propos',
         'conseil' => 'Un Conseil ?',
-        'plan' => 'Plan du site'
-        ,'cgv' => 'CGV',
+        'plan' => 'Plan du site',
+        'cgv' => 'CGV',
         'mentions-legales' => 'Mentions Légales'
     );
     public static $pros = array(
-        'homePro' => 'Accueil : Particulier',
-        'professionnel' => 'Accueil : Particulier',
+        'homePro' => 'Professionnel',
+        'professionnel' => 'Professionnel',
         'artisans' => 'Artisans',
         'commercants' => 'Commerçants',
         'immobilier' => 'Immobilier',

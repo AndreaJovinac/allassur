@@ -1,9 +1,7 @@
 <h2 style="margin: 30px 0px 30px 0px;"> Demande de devis : Professionnel </h2>
 
-<h5> Pour faire une demande devis, nous vous invitons à remplir ce formulaire, afin que nous puissions vous contacter
-    par téléphone ou par mail </h5>
 <!--- MODIFICATION DU CONTENU!-->
-<form id="contact-form" method="post" role="form" style="margin-top: 30px;" data-action="../../Allassur/core/contactdevis.php">
+<form id="contact-form" method="post" role="form" style="margin-top: 10px;" data-action="../../Allassur/core/contactdevis2.php">
 
 
     <h5 style="margin-bottom: 20px; color: #a34d1f;">
@@ -68,18 +66,16 @@
         </h5>
         <div class="">
             <label for="sociale">Raison sociale</label>
-            <input id="sociale" type="text" name="sociale" class="form-control" placeholder="Votre raison sociale">
-            <p class="comments" style="color: red; margin-top: 5px;"></p>
+            <input id="sociale" type="text" name="sociale" class="form-control" placeholder="Votre raison sociale" style="margin-bottom: 20px;">
         </div>
         <div class="">
             <label for="siret">Numéro de SIRET<span class="blue">*</span></label>
-            <input id="siret" type="number" name="siret" class="form-control" placeholder="Votre numéro de Siret">
+            <input id="siret" type="text" name="siret" class="form-control" placeholder="Votre numéro de Siret">
             <p class="comments" style="color: red; margin-top: 5px;"></p>
         </div>
         <div class="">
             <label for="affaires">Chiffres d'Affaires</label>
-            <input id="affaires" type="number" name="affaires" class="form-control" placeholder="Votre chiffre d'affaire">
-            <p class="comments" style="color: red; margin-top: 5px;"></p>
+            <input id="affaires" type="text" name="affaires" class="form-control" placeholder="Votre chiffre d'affaire">
         </div>
     </div> 
     <div class="" style="margin-bottom: 50px;">
@@ -88,13 +84,11 @@
         </h5>
         <div class="">
             <label for="compagnie">Nom de la compagnie d'assurance</label>
-            <input id="compagnie" type="text" name="compagnie" class="form-control" placeholder="Le nom de la compagnie d'assurance">
-            <p class="comments" style="color: red; margin-top: 5px;"></p>
+            <input id="compagnie" type="text" name="compagnie" class="form-control" placeholder="Le nom de la compagnie d'assurance" style="margin-bottom: 20px;">
         </div>
         <div class="">
             <label for="prime">Prime actuelle</label>
             <input id="prime" type="text" name="prime" class="form-control" placeholder="Votre prénom">
-            <p class="comments" style="color: red; margin-top: 5px;"></p>
         </div>
     </div>                    
     <div class="" style="margin-bottom: 50px;">
@@ -119,7 +113,7 @@
         </div>
         <div class="">
             <label for="email">Email<span class="blue">*</span></label>
-            <input id="email" type="text" name="email" class="form-control" placeholder="Votre Email">
+            <input id="email" type="text" name="email" class="form-control" id="email" placeholder="Votre Email">
             <p class="comments" style="color: red; margin-top: 5px;"></p>
         </div>
         <div class="">
@@ -130,7 +124,7 @@
 
         <div class="form-group">
             <label for="comment">Message<span class="blue">*</span> </label>
-            <textarea class="form-control" rows="10" id="comment" style="height: 150px;" placeholder="Votre Message"></textarea>
+            <textarea class="form-control" name="message" rows="10" id="comment" style="height: 150px;" placeholder="Votre Message"></textarea>
         </div>
         <div class="">
             <p class="blue" style="padding-top: 10px;"><strong>* Ces informations sont requises.</strong></p>

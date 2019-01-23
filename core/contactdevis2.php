@@ -7,16 +7,26 @@
         "nameError" => "", 
         "email" => "", 
         "phone" => "", 
-        "message" => "",       
+        "message" => "",
+        "sociale" => "",
+        "socialeError" => "",
+        "siret" => "",
+        "siretError" => "",
+        "compagnie" => "",
+        "compagnieError" => "",
+        "affaires" => "",
+        "affairesError" => "", 
+        "prime" => "",
+        "primeError" => "",
+        "activite" => "",
+        "activiteError" => "",       
         "emailError" => "", 
         "phoneError" => "", 
         "messageError" => "", 
         "choice" => null,
-        "choiceError" => "",
-        "postaleError" => "",
-        "postale" => "", 
-        "date" => null,
-        "dateError" => null, 
+        "choiceError" => "", 
+        "statut" => null,
+        "statutError" => null, 
         "sexe" => null, 
         "sexeError" => "", 
         "isSuccess" => false);
@@ -32,8 +42,13 @@
         $array["statut"] = test_input($_POST["statut"]);
         $array["sexe"] = test_input($_POST["sexe"]);
         $array["message"] = test_input($_POST["message"]);
-        $array["date"] = test_input($_POST["date"]);
-        $array["postale"] = test_input($_POST["postale"]);
+        $array["sociale"] = test_input($_POST["sociale"]);
+        $array["siret"] = test_input($_POST["siret"]);
+        $array["affaires"] = test_input($_POST["affaires"]);
+        $array["compagnie"] = test_input($_POST["compagnie"]);
+        $array["prime"] = test_input($_POST["prime"]);
+        $array["activite"] = test_input($_POST["activite"]);
+        $array["sociale"] = test_input($_POST["sociale"]);
         
         $array["isSuccess"] = true; 
         $emailText = "";
@@ -74,6 +89,7 @@
 
         
         
+        
         if (!isPhone($array["phone"]))
         {
             $array["phoneError"] = "Votre numéro de téléphone n'est pas correcte, réessayer encore, svp.";
@@ -84,6 +100,17 @@
             $emailText .= "N° Telephone: {$array['phone']}\n";
         }
         
+        
+        
+        if (empty($array["statut"]))
+        {
+            $array["statutError"] = "Veuillez sélectionner votre statut svp.";
+            $array["isSuccess"] = false; 
+        } 
+        else
+        {
+            $emailText .= "Statut de l'entreprise : {$array['statut']}\n";
+        }
         
         
         
@@ -99,14 +126,14 @@
         
 
 
-        if (empty($array["date"]))
+        if (empty($array["siret"]))
         {
-            $array["dateError"] = "Veuillez entrer votre date de naissance, svp";
+            $array["siretError"] = "Veuillez entrer votre numéro de siret, svp";
             $array["isSuccess"] = false; 
         } 
         else
         {
-            $emailText .= "Date de naissance : {$array['date']}\n";
+            $emailText .= "Numero de SIRET : {$array['siret']}\n";
         }
         
         
@@ -122,14 +149,23 @@
         }
         
 
-        if (empty($array["postale"]))
+        if (empty($array["compagnie"]))
         {
-            $array["postaleError"] = "Veuillez entrer votre code postale, svp";
-            $array["isSuccess"] = false;  
+            $array["isSuccess"] = true; 
         } 
         else
         {
-            $emailText .= "Code Postale: {$array['postale']}\n";
+            $emailText .= "Compagnie actuelle: {$array['compagnie']}\n";
+        }
+
+
+        if (empty($array["prime"]))
+        {
+            $array["isSuccess"] = true; 
+        } 
+        else
+        {
+            $emailText .= "Prime d'Activité: {$array['prime']}\n";
         }
         
         
@@ -140,6 +176,27 @@
         else
         {
             $emailText .= "Message: {$array['message']}\n";
+        }
+
+
+        if (empty($array["sociale"]))
+        {
+            $array["isSuccess"] = true; 
+        } 
+        else
+        {
+            $emailText .= "Raison Sociale: {$array['sociale']}\n";
+        }
+
+
+        
+        if (empty($array["affaires"]))
+        {
+            $array["isSuccess"] = true; 
+        } 
+        else
+        {
+            $emailText .= "Chiffres d'Affaires : {$array['affaires']}\n";
         }
 
                         
