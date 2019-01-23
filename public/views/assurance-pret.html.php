@@ -8,5 +8,5 @@ Toute personne qui souscrit un crédit afin de réaliser un projet immobilier,
 • En cas d’incapacité, nous prenons en charge vos mensualités d’emprunt ; en cas de décès, nous remboursons le capital restant dû <br/>
 • Une adhésion rapide si vous n’avez pas d’éléments médicaux à déclarer, sinon nous vous accompagnons pour toutes vos démarches médicales
 
-<br/><br/><a href="/Allassur/index.php?page=devis"> <button type="button" class="btn btn-secondary" class="display : block;">Faire un devis</button></a>
+<br/><br/><a href="/index.php?page=devis"> <button type="button" class="btn btn-secondary" class="display : block;">Faire un devis</button></a>
 <br/></p>

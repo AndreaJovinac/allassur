@@ -86,7 +86,7 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="modal-body">
-                                        <form id="contact-formfooter" method="post" role="form" style="" data-action="../../Allassur/core/contact.php">
+                                        <form id="contact-formfooter" method="post" role="form" style="" data-action="../../core/contact.php">
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <label for="firstname2">Prénom<span class="blue">*</span></label>
@@ -139,10 +139,10 @@
             <h4 id="Suivez" style="display: inline-block;" class="container col-sm-9 col-xs-9"> Suivez-nous sur les
                 réseaux </h4>
             <div class="iconeres col-xs-12" style="display: inline-block;">
-                <a class=" btn btn-default iconreseaux" id="moncercle" href="https://www.linkedin.com/company/allassur/">
+                <a class=" btn btn-default iconreseaux" id="moncercle" href="https://www.linkedin.com/company/">
                     <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KPGc+Cgk8Zz4KCQk8cmVjdCB5PSIxNjAiIHdpZHRoPSIxMTQuNDk2IiBoZWlnaHQ9IjM1MiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQyNi4zNjgsMTY0LjEyOGMtMS4yMTYtMC4zODQtMi4zNjgtMC44LTMuNjQ4LTEuMTUyYy0xLjUzNi0wLjM1Mi0zLjA3Mi0wLjY0LTQuNjQtMC44OTYgICAgYy02LjA4LTEuMjE2LTEyLjczNi0yLjA4LTIwLjU0NC0yLjA4Yy02Ni43NTIsMC0xMDkuMDg4LDQ4LjU0NC0xMjMuMDQsNjcuMjk2VjE2MEgxNjB2MzUyaDExNC40OTZWMzIwICAgIGMwLDAsODYuNTI4LTEyMC41MTIsMTIzLjA0LTMyYzAsNzkuMDA4LDAsMjI0LDAsMjI0SDUxMlYyNzQuNDY0QzUxMiwyMjEuMjgsNDc1LjU1MiwxNzYuOTYsNDI2LjM2OCwxNjQuMTI4eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPGNpcmNsZSBjeD0iNTYiIGN5PSI1NiIgcj0iNTYiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
                 </a>
-                <a class="btn btn-default iconreseaux float-right" id="moncercle" href="https://www.facebook.com/allassur/">
+                <a class="btn btn-default iconreseaux float-right" id="moncercle" href="https://www.facebook.com/">
                     <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzMTAgMzEwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMTAgMzEwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCI+CjxnIGlkPSJYTUxJRF84MzRfIj4KCTxwYXRoIGlkPSJYTUxJRF84MzVfIiBkPSJNODEuNzAzLDE2NS4xMDZoMzMuOTgxVjMwNWMwLDIuNzYyLDIuMjM4LDUsNSw1aDU3LjYxNmMyLjc2MiwwLDUtMi4yMzgsNS01VjE2NS43NjVoMzkuMDY0ICAgYzIuNTQsMCw0LjY3Ny0xLjkwNiw0Ljk2Ny00LjQyOWw1LjkzMy01MS41MDJjMC4xNjMtMS40MTctMC4yODYtMi44MzYtMS4yMzQtMy44OTljLTAuOTQ5LTEuMDY0LTIuMzA3LTEuNjczLTMuNzMyLTEuNjczaC00NC45OTYgICBWNzEuOTc4YzAtOS43MzIsNS4yNC0xNC42NjcsMTUuNTc2LTE0LjY2N2MxLjQ3MywwLDI5LjQyLDAsMjkuNDIsMGMyLjc2MiwwLDUtMi4yMzksNS01VjUuMDM3YzAtMi43NjItMi4yMzgtNS01LTVoLTQwLjU0NSAgIEMxODcuNDY3LDAuMDIzLDE4Ni44MzIsMCwxODUuODk2LDBjLTcuMDM1LDAtMzEuNDg4LDEuMzgxLTUwLjgwNCwxOS4xNTFjLTIxLjQwMiwxOS42OTItMTguNDI3LDQzLjI3LTE3LjcxNiw0Ny4zNTh2MzcuNzUySDgxLjcwMyAgIGMtMi43NjIsMC01LDIuMjM4LTUsNXY1MC44NDRDNzYuNzAzLDE2Mi44NjcsNzguOTQxLDE2NS4xMDYsODEuNzAzLDE2NS4xMDZ6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" /></a>
             </div>
         </div>
@@ -153,55 +153,55 @@
                 <ul class="footer-list">
                     <h5 style="margin-bottom: 20px;">Particulier</h5>
                     <li>
-                        <a href="/Allassur/index.php?page=sante">Santé</a>
+                        <a href="/index.php?page=sante">Santé</a>
                     </li>
 
                     <li>
-                        <a href="/Allassur/index.php?page=prevoyance-sante">Prévoyance Santé</a>
+                        <a href="/index.php?page=prevoyance-sante">Prévoyance Santé</a>
                     </li>
 
                     <li>
-                        <a href="/Allassur/index.php?page=obseques">Obsèques</a>
+                        <a href="/index.php?page=obseques">Obsèques</a>
                     </li>
 
                     <li>
-                        <a href="/Allassur/index.php?page=dependance">Dependance</a>
+                        <a href="/index.php?page=dependance">Dependance</a>
                     </li>
 
                     <li>
-                        <a href="/Allassur/index.php?page=retraite">Retraite</a>
+                        <a href="/index.php?page=retraite">Retraite</a>
                     </li>
 
                     <li>
-                        <a href="/Allassur/index.php?page=assurance-pret">Assurance de prêt</a>
+                        <a href="/index.php?page=assurance-pret">Assurance de prêt</a>
                     </li>
 
                     <li>
-                        <a href="/Allassur/index.php?page=automobile">Automobile</a>
+                        <a href="/index.php?page=automobile">Automobile</a>
                     </li>
 
                     <li>
-                        <a href="/Allassur/index.php?page=flotte-automobile">Flotte Automobile</a>
+                        <a href="/index.php?page=flotte-automobile">Flotte Automobile</a>
                     </li>
 
                     <li>
-                        <a href="/Allassur/index.php?page=vtc">VTC</a>
+                        <a href="/index.php?page=vtc">VTC</a>
                     </li>
 
                     <li>
-                        <a href="/Allassur/index.php?page=taxi">TAXI</a>
+                        <a href="/index.php?page=taxi">TAXI</a>
                     </li>
 
                     <li>
-                        <a href="/Allassur/index.php?page=moto">Moto</a>
+                        <a href="/index.php?page=moto">Moto</a>
                     </li>
 
                     <li>
-                        <a href="/Allassur/index.php?page=habitation">Habitation</a>
+                        <a href="/index.php?page=habitation">Habitation</a>
                     </li>
 
                     <li>
-                        <a href="/Allassur/index.php?page=clients-chats">Chient & Chats</a>
+                        <a href="/index.php?page=clients-chats">Chient & Chats</a>
                     </li>
 
                 </ul>
@@ -211,36 +211,36 @@
                 <ul class="footer-list">
                     <h5 style="margin-bottom: 20px;">Professionnel</h5>
                     <li>
-                        <a href="/Allassur/index.php?page=artisans">Artisans / BTP</a>
+                        <a href="/index.php?page=artisans">Artisans / BTP</a>
                     </li>
 
                     <li>
-                        <a href="/Allassur/index.php?page=commercants">Commerçants </a>
+                        <a href="/index.php?page=commercants">Commerçants </a>
                     </li>
 
                     <li>
-                        <a href="/Allassur/index.php?page=immobilier">Immobilier</a>
+                        <a href="/index.php?page=immobilier">Immobilier</a>
                     </li>
 
                     <li>
-                        <a href="/Allassur/index.php?page=m-services">Métiers du service</a>
+                        <a href="/index.php?page=m-services">Métiers du service</a>
                     </li>
 
                     <li>
-                        <a href="/Allassur/index.php?page=m-sante">Métiers de la santé</a>
+                        <a href="/index.php?page=m-sante">Métiers de la santé</a>
                     </li>
 
 
                     <li>
-                        <a href="/Allassur/index.php?page=hotellerie">Hotellerie</a>
+                        <a href="/index.php?page=hotellerie">Hotellerie</a>
                     </li>
 
                     <li>
-                        <a href="/Allassur/index.php?page=restauration">Restauration</a>
+                        <a href="/index.php?page=restauration">Restauration</a>
                     </li>
 
                     <li>
-                        <a href="/Allassur/index.php?page=secteurs">Autres secteurs</a>
+                        <a href="/index.php?page=secteurs">Autres secteurs</a>
                     </li>
                 </ul>
             </div>
@@ -255,13 +255,13 @@
 
                     <h5 style="margin-top: 40px; margin-bottom: 20px;">Qui sommes nous ? </h5>
                     <li>
-                        <a href="/Allassur/index.php?page=a-propos"> À propos d'Allassur</a>
+                        <a href="/index.php?page=a-propos"> À propos d'Allassur</a>
                     </li>
                     <li>
-                        <a href="/Allassur/index.php?page=conseil"> Un Conseil ?</a>
+                        <a href="/index.php?page=conseil"> Un Conseil ?</a>
                     </li>
                     <li>
-                        <a href="/Allassur/index.php?page=devis"> Faire un devis </a>
+                        <a href="/index.php?page=devis"> Faire un devis </a>
                     </li>
                 </ul>
             </div>
@@ -298,17 +298,17 @@
                         jovinacandrea.fr </a></p>
                 <ul class="footer-list copyright col-5 justify-content-end">
                     <li>
-                        <a href="/Allassur/index.php?page=mentions-legales">Mentions Légales</a>
+                        <a href="/index.php?page=mentions-legales">Mentions Légales</a>
                     </li>
                     <li>
-                        <a href="/Allassur/index.php?page=cgv"> CGV </a>
+                        <a href="/index.php?page=cgv"> CGV </a>
                     </li>
                     <li>
-                        <a href="/Allassur/index.php?page=plan"> Plan du site</a>
+                        <a href="/index.php?page=plan"> Plan du site</a>
                     </li>
 
                     <li>
-                        <a href="/Allassur/index.php?page=conseil"> Un Conseil ?</a>
+                        <a href="/index.php?page=conseil"> Un Conseil ?</a>
                     </li>
                 </ul>
             </div>

@@ -7,7 +7,7 @@ Garantie maladie : elle couvre les dépenses chez le vétérinaire (médicam
 Garantie accident : c’est la même chose que la garantie maladie, mais elle prend le relais lorsque des soins sont nécessaires après un accident, pour un chien ou un chat renversé par une voiture par exemple ;
 Garantie décès : en cas du décès de l’animal, les frais de rapatriement et d’obsèques peuvent être pris en charge.
 D’autres formules peuvent être proposées. Comme une formule adaptée aux dommages qu’un animal peut causer. Les chiens considérés comme « dangereux » peuvent aussi faire l’objet de garanties spécifiques, pour le cas où ils causeraient une blessure à un tiers.
-<br/><br/><a href="/Allassur/index.php?page=devis"> <button type="button" class="btn btn-secondary" class="display : block;">Faire un devis</button></a>
+<br/><br/><a href="/index.php?page=devis"> <button type="button" class="btn btn-secondary" class="display : block;">Faire un devis</button></a>
 <br/></p>
 
 
