@@ -9,5 +9,6 @@ La prévoyance est une protection sociale qui complète celle du régime obli
 Contrairement à la mutuelle santé, dont le rôle est de compléter le remboursement de la Sécurité sociale uniquement sur la partie soins (après un accident par exemple), la prévoyance vous vient en aide financièrement dans votre vie de tous les jours. Elle compense les pertes de revenus de l’assuré en cas d’impossibilité de travailler, lui permettant ainsi de garantir son niveau de vie dans des circonstances difficiles. En cas de décès, la prestation correspond à un capital : rente versée au conjoint survivant, ou rente éducation (adressée aux enfants survivants, pour le financement de leurs études par exemple).
 En cas d’incapacité (arrêt de travail temporaire ou définitif), les indemnités journalières permettent à l’assuré de maintenir un revenu pendant une durée maximale de trois ans.
 En cas d’invalidité, une rente viendra compenser la perte de revenus, jusqu’à la retraite si nécessaire.
-<br/><br/><a href="/Allassur/index.php?page=devis"> <button type="button" class="btn btn-secondary" class="display : block;">Faire un devis</button></a>
+<br/><br/><a href="./index
+.php?page=devis"> <button type="button" class="btn btn-secondary" class="display : block;">Faire un devis</button></a>
 <br/></p>

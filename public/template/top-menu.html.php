@@ -5,13 +5,16 @@
             </div>
             <ul class="nav justify-content-end barrenoir">
                 <li class="nav-item">
-                    <a class="nav-link" href="/Allassur/index.php?page=conseil"> Un conseil ?</a>
+                    <a class="nav-link" href="./index
+.php?page=conseil"> Un conseil ?</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/Allassur/index.php?page=a-propos"> À propos d'All'Assur</a>
+                    <a class="nav-link" href="./index
+.php?page=a-propos"> À propos d'All'Assur</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/Allassur/index.php?page=devis<?php if($ctrl->isPro()) echo('2'); ?>"> Faire un devis</a>
+                    <a class="nav-link" href="./index
+.php?page=devis<?php if($ctrl->isPro()) echo('2'); ?>"> Faire un devis</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contacterancre" id="contactnoir"> Contact</a>

@@ -1,62 +1,64 @@
 <h2 style="margin: 30px 0px 30px 0px;"> Demande de devis : Professionnel </h2>
 
 <!--- MODIFICATION DU CONTENU!-->
-<form id="contact-form" method="post" role="form" style="margin-top: 10px;" data-action="../../Allassur/core/contactdevis2.php">
+<form id="contact-form" method="post" role="form" style="margin-top: 10px;" data-action="core/contactdevis2.php">
 
 
     <h5 style="margin-bottom: 20px; color: #a34d1f;">
         <strong> 1) Sélectionner le type d'Assurance que vous souhaitez <span class="blue">*</span> : </strong>
     </h5>
     <div id="choice">
-        <div class="float-right col-lg-6 col-sm-12 col-xs-12" style="padding: 0; display : none;">
-            <?php 
-                $index = 0;
-                foreach ($ctrl->choicesPro as $key => $value) {
-                    if($index*2 >= count($ctrl->choices)) {
-                        echo('</div><div class="float-right col-lg-6 col-sm-12 col-xs-12" style="padding: 0;"> ');
-                        $index = 0;
-                    } else {
-                        $index = $index + 1;
-                    }
-                    ?>
-            <div class="checkbox" style="padding: 0;">
-                <label>
-                    <input 
-                        type="radio" 
-                        name="choice"
-                        <?php if($ctrl->getSelectedDevis() == $key) echo('checked'); ?> 
-                        value="<?php echo($value); ?>">
-                    <?php echo($value); ?>
-                </label>
+        <div class="clearfix">
+            <div class="float-right col-lg-6 col-sm-12 col-xs-12" style="padding: 0;">
+                <?php 
+                    $index = 0;
+                    foreach ($ctrl->choicesPro as $key => $value) {
+                        if($index*2 >= count($ctrl->choicesPro)) {
+                            echo('</div><div class="float-right col-lg-6 col-sm-12 col-xs-12" style="padding: 0;"> ');
+                            $index = 0;
+                        } else {
+                            $index = $index + 1;
+                        }
+                        ?>
+                <div class="checkbox" style="padding: 0;">
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="choice"
+                            <?php if($ctrl->getSelectedDevis() == $key) echo('checked'); ?> 
+                            value="<?php echo($value); ?>">
+                        <?php echo($value); ?>
+                    </label>
+                </div>
+                <?php } ?>
             </div>
-            <?php } ?>
         </div>
         <p class="comments" style="color: red; clear: both;"></p>
     </div>
     
     
-    <div id="choicecontact" class=" col-lg-6 col-sm-12 col-xs-12" style="padding: 0;">
+    <div id="statut" class=" col-lg-12 col-sm-12 col-xs-12" style="padding: 0;">
         <h5 style="margin-top: 20px; color: #a34d1f; margin-top: 20px; "><strong>2) Quel est votre statut ? <span class="blue">*</span> : </strong> </h5>
         <div class="checkbox col-sm-12 col-xs-12" style="padding: 0;">
-            <label><input type="radio" name="statut" value="statut"> SAS </label>
+            <label><input type="radio" name="statut" value="SAS"> SAS </label>
         </div>
         <div class="checkbox col-sm-12 col-xs-12" style="padding: 0;">
-            <label><input type="radio" name="statut" value="statut"> SASU</label>
+            <label><input type="radio" name="statut" value="SASU"> SASU</label>
         </div>
         <div class="checkbox col-sm-12 col-xs-12" style="padding: 0;">
-            <label><input type="radio" name="statut" value="statut"> SARL </label>
+            <label><input type="radio" name="statut" value="SARL"> SARL </label>
         </div>
         <div class="checkbox col-sm-12 col-xs-12" style="padding: 0;">
-            <label><input type="radio" name="statut" value="statut"> EIRL </label>
+            <label><input type="radio" name="statut" value="EIRL"> EIRL </label>
         </div>
         <div class="checkbox col-sm-12 col-xs-12" style="padding: 0;">
-            <label><input type="radio" name="statut" value="statut"> EURL </label>
+            <label><input type="radio" name="statut" value="EURL"> EURL </label>
         </div>
         <div class="checkbox col-sm-12 col-xs-12" style="padding: 0;">
-            <label><input type="radio" name="statut" value="statut"> SCI </label>
+            <label><input type="radio" name="statut" value="SCI"> SCI </label>
         </div>
         <div class="checkbox col-sm-12 col-xs-12" style="padding: 0;">
-            <label><input type="radio" name="statut" value="statut"> Entreprise Individuelle (Auto-Entrepreneur) </label>
+            <label><input type="radio" name="statut" value="Entreprise Individuelle (Auto-Entrepreneur)"> Entreprise Individuelle (Auto-Entrepreneur) </label>
         </div>
         <p class="comments" style="color: red; margin-top: 5px;"></p>
     </div>
@@ -88,7 +90,7 @@
         </div>
         <div class="">
             <label for="prime">Prime actuelle</label>
-            <input id="prime" type="text" name="prime" class="form-control" placeholder="Votre prénom">
+            <input id="prime" type="text" name="prime" class="form-control" placeholder="Votre prime actuelle">
         </div>
     </div>                    
     <div class="" style="margin-bottom: 50px;">
@@ -123,8 +125,9 @@
         </div>
 
         <div class="form-group">
-            <label for="comment">Message<span class="blue">*</span> </label>
-            <textarea class="form-control" name="message" rows="10" id="comment" style="height: 150px;" placeholder="Votre Message"></textarea>
+            <label for="message">Message<span class="blue">*</span> </label>
+            <textarea class="form-control" id="message" name="message" rows="10" style="height: 150px;" placeholder="Votre Message"></textarea>
+            <p class="comments" style="color: red; margin-top: 5px;"></p>
         </div>
         <div class="">
             <p class="blue" style="padding-top: 10px;"><strong>* Ces informations sont requises.</strong></p>

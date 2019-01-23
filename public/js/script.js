@@ -38,7 +38,7 @@ $(document).ready(function(){
         
         $.ajax({
             type: 'POST',
-            url: $(this).data('action'),
+            url: '/Allassur/' + $(this).data('action'),
             data: postdata,
             dataType: 'json',
             success: function(json) {
@@ -58,8 +58,11 @@ $(document).ready(function(){
                     $('#phone + .comments').html(json.phoneError);
                     $('#date + .comments').html(json.dateError);
                     $('#postale + .comments').html(json.postaleError);
+                    $('#choicecontact .comments').html(json.choicecontactError);
                     $('#siret + .comments').html(json.siretError);
-                    $('#statut + .comments').html(json.statutError);
+                    $('#activite + .comments').html(json.activiteError);
+                    $('#message + .comments').html(json.messageError);
+                    $('#statut .comments').html(json.statutError);
                     
                 }                
             }
@@ -69,11 +72,11 @@ $(document).ready(function(){
     $('#contact-formfooter').submit(function(e) {
         e.preventDefault();
         $('.comments').empty();
-        var postdata = $('#ccontact-formfooter').serialize();
+        var postdata = $('#contact-formfooter').serialize();
         
         $.ajax({
             type: 'POST',
-            url: $(this).data('action'),
+            url: '/Allassur/' + $(this).data('action'),
             data: postdata,
             dataType: 'json',
             success: function(json) {
