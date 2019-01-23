@@ -34,7 +34,7 @@
             <a class="nav-link proffpage <?php if($ctrl->isPro()) echo('active'); ?>" href="/index.php?page=professionnel">PROFESSIONNEL</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link proffpage <?php if($ctrl->isDevis()) echo('active'); ?>"  href="/index.php?page=devis">FAIRE UN DEVIS</a>
+            <a class="nav-link proffpage <?php if($ctrl->isDevis()) echo('active'); ?>"  href="/index.php?page=devis<?php if($ctrl->isPro()) echo('2'); ?>">FAIRE UN DEVIS</a>
         </li>
     </ul>
 </nav>

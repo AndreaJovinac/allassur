@@ -72,7 +72,7 @@ $(document).ready(function(){
     $('#contact-formfooter').submit(function(e) {
         e.preventDefault();
         $('.comments').empty();
-        var postdata = $('#ccontact-formfooter').serialize();
+        var postdata = $('#contact-formfooter').serialize();
         
         $.ajax({
             type: 'POST',

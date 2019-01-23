@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous">
         <link rel="stylesheet" href="public/css/bootstrap.min.css" >
         <link rel="stylesheet" href="public/css/style.css" />
-        <base href="/" target="_blank">
+        <base href="/">
         <title>All'Assur : Courtier en assurances - <?php echo($ctrl->title); ?></title>
 
     </head>
