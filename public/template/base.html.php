@@ -25,7 +25,7 @@
                     <div class="jumbotron jumbotron2 container d-none d-sm-block">
                         <div class="content-jumbotron container col-11" style="margin-top: 20px;">
                             <h1><b> ALL'ASSUR</b></h1>
-                            <h4>Courtier Assurances, du particulier au professionnel</h4>
+                            <h4>Courtier en assurances, du particulier au professionnel</h4>
                         </div>
                     </div>
                     <?php if(!$ctrl->isDevis()) require(__DIR__.'/search.html.php'); ?>

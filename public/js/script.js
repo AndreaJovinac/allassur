@@ -45,7 +45,7 @@ $(document).ready(function(){
                  
                 if(json.isSuccess) 
                 {
-                    $('#contact-form').append("<p class='thank-you' style='color:red; padding: 10px; margin-top: 30px; font-size: 24px; text-align: center; color: white; background-color: #683114;'>Merci d'avoir rempli ce formulaire de demande de devis.<br/> Vous recevrez votre devis par mail dans peu de jours.</p>");
+                    $('#contact-form').append("<p class='thank-you' style='padding: 10px; margin-top: 20px; margin-bottom: 30px;font-size: 24px; text-align: center; color: white; background-color: #683114;'>Merci d'avoir rempli ce formulaire de demande de devis.<br/> Vous recevrez votre devis par mail dans peu de jours.</p>");
                     $('#contact-form')[0].reset();
                 }
                 else
@@ -60,6 +60,35 @@ $(document).ready(function(){
                     $('#postale + .comments').html(json.postaleError);
                     $('#siret + .comments').html(json.siretError);
                     $('#statut + .comments').html(json.statutError);
+                    
+                }                
+            }
+        });
+    });
+
+    $('#contact-formfooter').submit(function(e) {
+        e.preventDefault();
+        $('.comments').empty();
+        var postdata = $('#ccontact-formfooter').serialize();
+        
+        $.ajax({
+            type: 'POST',
+            url: $(this).data('action'),
+            data: postdata,
+            dataType: 'json',
+            success: function(json) {
+                 
+                if(json.isSuccess) 
+                {
+                    $('#contact-formfooter').append("<p class='thank-you' style='color:red; padding: 10px; margin-top: 30px; font-size: 24px; text-align: center; color: white; background-color: #683114;'>Merci, un conseiller va vous contacter dans peu de temps. </p>");
+                    $('#contact-formfooter')[0].reset();
+                }
+                else
+                {
+                    $('#firstname2 + .comments').html(json.firstnameError);
+                    $('#name2 + .comments').html(json.nameError);
+                    $('#email2 + .comments').html(json.emailError);
+                    $('#phone2 + .comments').html(json.phoneError);
                     
                 }                
             }

@@ -86,29 +86,29 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="modal-body">
-                                        <form id="contact-form" method="post" role="form" style="" data-action="../../Allassur/core/contact.php">
+                                        <form id="contact-formfooter" method="post" role="form" style="" data-action="../../Allassur/core/contact.php">
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <label for="firstname">Prénom<span class="blue">*</span></label>
-                                                        <input id="firstname" type="text" name="firstname" class="form-control"
+                                                        <label for="firstname2">Prénom<span class="blue">*</span></label>
+                                                        <input id="firstname2" type="text" name="firstname2" class="form-control"
                                                             placeholder="Votre prénom">
                                                         <p class="comments" style="color: red; margin-top: 5px;"></p>
                                                     </div>
                                                     <div class="col-md-12">
-                                                        <label for="name">Nom<span class="blue">*</span></label>
-                                                        <input id="name" type="text" name="name" class="form-control"
+                                                        <label for="name2">Nom<span class="blue">*</span></label>
+                                                        <input id="name2" type="text" name="name2" class="form-control"
                                                             placeholder="Votre Nom">
                                                         <p class="comments" style="color: red; margin-top: 5px;"></p>
                                                     </div>
                                                     <div class="col-md-12">
-                                                        <label for="email">Email<span class="blue">*</span></label>
-                                                        <input id="email" type="text" name="email" class="form-control"
+                                                        <label for="email2">Email<span class="blue">*</span></label>
+                                                        <input id="email2" type="text" name="email2" class="form-control"
                                                             placeholder="Votre Email">
                                                         <p class="comments" style="color: red; margin-top: 5px;"></p>
                                                     </div>
                                                     <div class="col-md-12">
-                                                        <label for="phone">Téléphone<span class="blue">*</span></label>
-                                                        <input id="phone" type="tel" name="phone" maxlenght="10" size="10"
+                                                        <label for="phone2">Téléphone<span class="blue">*</span></label>
+                                                        <input id="phone2" type="tel" name="phone2" maxlenght="10" size="10"
                                                             class="form-control" placeholder="Votre Téléphone">
                                                         <p class="comments" style="color: red; margin-top: 5px;"></p>
                                                     </div>
@@ -161,11 +161,35 @@
                     </li>
 
                     <li>
+                        <a href="/Allassur/index.php?page=obseques">Obsèques</a>
+                    </li>
+
+                    <li>
+                        <a href="/Allassur/index.php?page=dependance">Dependance</a>
+                    </li>
+
+                    <li>
+                        <a href="/Allassur/index.php?page=retraite">Retraite</a>
+                    </li>
+
+                    <li>
                         <a href="/Allassur/index.php?page=assurance-pret">Assurance de prêt</a>
                     </li>
 
                     <li>
                         <a href="/Allassur/index.php?page=automobile">Automobile</a>
+                    </li>
+
+                    <li>
+                        <a href="/Allassur/index.php?page=flotte-automobile">Flotte Automobile</a>
+                    </li>
+
+                    <li>
+                        <a href="/Allassur/index.php?page=vtc">VTC</a>
+                    </li>
+
+                    <li>
+                        <a href="/Allassur/index.php?page=taxi">TAXI</a>
                     </li>
 
                     <li>
@@ -180,17 +204,6 @@
                         <a href="/Allassur/index.php?page=clients-chats">Chient & Chats</a>
                     </li>
 
-                    <li>
-                        <a href="/Allassur/index.php?page=obseques">Obsèques </a>
-                    </li>
-
-                    <li>
-                        <a href="/Allassur/index.php?page=dependance">Dépendance</a>
-                    </li>
-
-                    <li>
-                        <a href="/Allassur/index.php?page=retraite">Retraite</a>
-                    </li>
                 </ul>
             </div>
 
@@ -261,15 +274,14 @@
                     </li>
 
                     <li>
-                        <h5> Du particulier au professionnel</h5>
+                        <h5> Du particulier <br/> au professionnel</h5>
                     </li>
 
                     <li>
-                        <p>5 rue Marcel Sembat, 75 009 Paris <br />
+                        <p>93 rue du Faubourg Saint Denis, <br /> 
+                           75010 Paris <br />
                             Téléphone : 01 23 45 05 67 <br />
                             Mail : contact@allassur.fr<br />
-                            Accès : Métro 9 - Station Miromesnil <br />
-                            Voiture : Porte Saint-Cloud <br />
                         </p>
                     </li>
 

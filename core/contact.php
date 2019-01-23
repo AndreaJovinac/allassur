@@ -1,10 +1,10 @@
 <?php
 
     $array = array(
-        "firstname" => "", 
-        "name" => "", 
-        "email" => "",
-        "phone" => "", 
+        "firstname2" => "", 
+        "name2" => "", 
+        "email2" => "",
+        "phone2" => "", 
         "message" => "", 
         "firstnameError" => "", 
         "nameError" => "", 
@@ -16,15 +16,14 @@
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") 
     { 
-        $array["firstname"] = test_input($_POST["firstname"]);
-        $array["name"] = test_input($_POST["name"]);
-        $array["email"] = test_input($_POST["email"]);
-        $array["phone"] = test_input($_POST["phone"]);
-        $array["choice"] =test_input($_POST["choice"]);
+        $array["firstname2"] = test_input($_POST["firstname2"]);
+        $array["name2"] = test_input($_POST["name2"]);
+        $array["email2"] = test_input($_POST["email2"]);
+        $array["phone2"] = test_input($_POST["phone2"]);
         $array["isSuccess"] = true; 
         $emailText = "";
 
-        if (empty($array["firstname"]))
+        if (empty($array["firstname2"]))
         {
             $array["firstnameError"] = "Veuillez saisir votre prénom, svp.";
             $array["isSuccess"] = false; 
@@ -34,37 +33,37 @@
             $emailText .= "Prenom: {$array['firstname']}\n";
         }
 
-        if (empty($array["name"]))
+        if (empty($array["name2"]))
         {
             $array["nameError"] = "Veuillez saisir votre nom, svp.";
             $array["isSuccess"] = false; 
         } 
         else
         {
-            $emailText .= "Nom: {$array['name']}\n";
+            $emailText .= "Nom: {$array['name2']}\n";
         }
 
-        if(!isEmail($array["email"])) 
+        if(!isEmail($array["email2"])) 
         {
             $array["emailError"] = "Veuillez saisir une adresse mail correcte, svp.";
             $array["isSuccess"] = false; 
         } 
         else
         {
-            $emailText .= "Email: {$array['email']}\n";
+            $emailText .= "Email: {$array['email2']}\n";
         }
 
-        if (!isPhone($array["phone"]))
+        if (!isPhone($array["phone2"]))
         {
             $array["phoneError"] = "Votre numéro de téléphone n'est pas correcte, réessayer encore, svp.";
             $array["isSuccess"] = false; 
         }
         else
         {
-            $emailText .= "N° Telephone: {$array['phone']}\n";
+            $emailText .= "N° Telephone: {$array['phone2']}\n";
         }
         
-        if (empty($array["phone"]))
+        if (empty($array["phone2"]))
         {
             $array["phoneError"] = "Veuillez saisir votre numéro de téléphone, svp.";
             $array["isSuccess"] = false; 
@@ -85,13 +84,13 @@
         
     }
 
-    function isEmail($email) 
+    function isEmail($email2) 
     {
-        return filter_var($email, FILTER_VALIDATE_EMAIL);
+        return filter_var($email2, FILTER_VALIDATE_EMAIL);
     }
-    function isPhone($phone) 
+    function isPhone($phone2) 
     {
-        return preg_match("#(\+[0-9]{2}\([0-9]\))?[0-9]{10}#",$phone);
+        return preg_match("#(\+[0-9]{2}\([0-9]\))?[0-9]{10}#",$phone2);
         //return preg_match("#(\+[0-9]{2}\([0-9]\))?[0-9]{10}#", $phone);  return preg_match("/^[0-9 ]*$/",$phone);
     }
     function test_input($data) 
