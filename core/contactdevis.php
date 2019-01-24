@@ -14,6 +14,7 @@ $array = array(
     "choice" => null,
     "choiceError" => "",
     "postaleError" => "",
+    "postaleError2" => "",
     "postale" => "",
     "date" => null,
     "dateError" => null,
@@ -65,6 +66,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $emailText .= "N° Telephone: {$array['phone']}\n";
     }
 
+    if (empty($array["phone"])) {
+        $array["phoneError"] = "Veuillez saisir votre numéro de téléphone, svp";
+        $array["isSuccess"] = false;
+    } else {
+        $emailText .= "N° Telephone: {$array['phone']}\n";
+    }
+
     if (empty($array["choice"])) {
         $array["choiceError"] = "Veuillez sélectionner un type d'assurance, svp";
         $array["isSuccess"] = false;
@@ -86,18 +94,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $emailText .= "Cette personne est un(e): {$array['sexe']}\n";
     }
 
+
     if (empty($array["postale"])) {
         $array["postaleError"] = "Veuillez entrer votre adresse postale, svp";
         $array["isSuccess"] = false;
     } else {
         $emailText .= "Code postale: {$array['postale']}\n";
-    }
-
-    if (!isPostale($array["postale"])) {
-        $array["postaleError"] = "Vérifier votre saisie, svp";
-        $array["isSuccess"] = false;
-    } else {
-        $emailText .= "Code Postale: {$array['postale']}\n";
     }
 
     if (!empty($array["message"])) {
@@ -116,11 +118,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 function isEmail($email)
 {
     return filter_var($email, FILTER_VALIDATE_EMAIL);
-}
-
-function isPostale($postale)
-{
-    return filter_var($postale, FILTER_VALIDATE_EMAIL);
 }
 
 function isPhone($phone)

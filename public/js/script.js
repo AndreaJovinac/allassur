@@ -68,6 +68,7 @@ $(document).ready(function(){
                     $('#statut + .comments').html(json.statutError);
                     $('#affaires + .comments').html(json.affairesError);
                     $('#prime + .comments').html(json.primeError);
+
                     
                 }                
             }

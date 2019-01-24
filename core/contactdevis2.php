@@ -72,6 +72,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $emailText .= "N° Telephone: {$array['phone3']}\n";
     }
 
+    if (empty($array["phone3"])) {
+        $array["phoneError"] = "Veuillez saisir une adresse mail correcte, svp";
+        $array["isSuccess"] = false;
+    } else {
+        $emailText .= "N° Telephone: {$array['phone3']}\n";
+    }
+
     if (!isSiret($array["siret"])) {
         $array["siretError"] = "Votre numéro de Siret, doit être composé de maximum 8 chiffres";
         $array["isSuccess"] = false;
@@ -126,7 +133,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $emailText .= "Message: {$array['message3']}\n";
     }
 
-    if (! empty($array["sociale"])) {
+    if (!empty($array["sociale"])) {
         $emailText .= "Raison Sociale: {$array['sociale']}\n";
     }
 
