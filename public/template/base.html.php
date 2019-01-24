@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous">
+        <link rel="icon" type="image/png" href="./img/favicon-02.png" />
         <link rel="stylesheet" href="public/css/bootstrap.min.css" >
         <link rel="stylesheet" href="public/css/style.css" />
         <base href="/Allassur/">

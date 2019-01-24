@@ -51,18 +51,23 @@ $(document).ready(function(){
                 else
                 {
                     $('#firstname + .comments').html(json.firstnameError);
+                    $('#firstname3 + .comments').html(json.firstnameError);
                     $('#choice .comments').html(json.choiceError);
                     $('#sexe .comments').html(json.sexeError);
                     $('#name + .comments').html(json.nameError);
                     $('#email + .comments').html(json.emailError);
                     $('#phone + .comments').html(json.phoneError);
+                    $('#name3 + .comments').html(json.nameError);
+                    $('#email3 + .comments').html(json.emailError);
+                    $('#phone3 + .comments').html(json.phoneError);
                     $('#date + .comments').html(json.dateError);
                     $('#postale + .comments').html(json.postaleError);
                     $('#choicecontact .comments').html(json.choicecontactError);
                     $('#siret + .comments').html(json.siretError);
                     $('#activite + .comments').html(json.activiteError);
-                    $('#message + .comments').html(json.messageError);
-                    $('#statut .comments').html(json.statutError);
+                    $('#statut + .comments').html(json.statutError);
+                    $('#affaires + .comments').html(json.affairesError);
+                    $('#prime + .comments').html(json.primeError);
                     
                 }                
             }

@@ -1,41 +1,37 @@
 <?php
 
 $array = array(
-    "firstname" => "",
+    "firstname3" => "",
     "firstnameError" => "",
-    "name" => "",
+    "name3" => "",
     "nameError" => "",
-    "email" => "",
+    "email3" => "",
     "emailError" => "",
-    "phone" => "",
+    "phone3" => "",
     "phoneError" => "",
-    "message" => "",
+    "message3" => "",
     "messageError" => "",
     "sociale" => "",
     "siret" => "",
     "siretError" => "",
     "compagnie" => "",
     "affaires" => "",
+    "affairesError" => "",
     "prime" => "",
+    "primeError" => "",
     "activite" => "",
     "activiteError" => "",
-    "choice" => null,
-    "choiceError" => "",
     "statut" => null,
     "statutError" => null,
-    "sexe" => null,
-    "sexeError" => "",
     "isSuccess" => false);
 $emailTo = "contact@jovinacandrea.fr";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $array["firstname"] = test_input($_POST["firstname"]);
-    $array["name"] = test_input($_POST["name"]);
-    $array["email"] = test_input($_POST["email"]);
-    $array["phone"] = test_input($_POST["phone"]);
-    $array["choice"] = test_input($_POST["choice"]);
+    $array["firstname3"] = test_input($_POST["firstname3"]);
+    $array["name3"] = test_input($_POST["name3"]);
+    $array["email3"] = test_input($_POST["email3"]);
+    $array["phone3"] = test_input($_POST["phone3"]);
     $array["statut"] = test_input($_POST["statut"]);
-    $array["sexe"] = test_input($_POST["sexe"]);
     $array["message"] = test_input($_POST["message"]);
     $array["sociale"] = test_input($_POST["sociale"]);
     $array["siret"] = test_input($_POST["siret"]);
@@ -48,32 +44,53 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $array["isSuccess"] = true;
     $emailText = "";
 
-    if (empty($array["firstname"])) {
+    if (empty($array["firstname3"])) {
         $array["firstnameError"] = "Veuillez saisir votre prénom, svp.";
         $array["isSuccess"] = false;
     } else {
-        $emailText .= "Prenom: {$array['firstname']}\n";
+        $emailText .= "Prenom: {$array['firstname3']}\n";
     }
 
-    if (empty($array["name"])) {
+    if (empty($array["name3"])) {
         $array["nameError"] = "Veuillez saisir votre nom, svp.";
         $array["isSuccess"] = false;
     } else {
-        $emailText .= "Nom: {$array['name']}\n";
+        $emailText .= "Nom: {$array['name3']}\n";
     }
 
-    if (!isEmail($array["email"])) {
+    if (!isEmail($array["email3"])) {
         $array["emailError"] = "Veuillez saisir une adresse mail correcte, svp.";
         $array["isSuccess"] = false;
     } else {
-        $emailText .= "Email: {$array['email']}\n";
+        $emailText .= "Email: {$array['email3']}\n";
     }
 
-    if (!isPhone($array["phone"])) {
+    if (!isPhone($array["phone3"])) {
         $array["phoneError"] = "Votre numéro de téléphone n'est pas correcte, réessayer encore, svp.";
         $array["isSuccess"] = false;
     } else {
-        $emailText .= "N° Telephone: {$array['phone']}\n";
+        $emailText .= "N° Telephone: {$array['phone3']}\n";
+    }
+
+    if (!isSiret($array["siret"])) {
+        $array["siretError"] = "Votre numéro de Siret, doit être composé de maximum 8 chiffres";
+        $array["isSuccess"] = false;
+    } else {
+        $emailText .= "N° SIRET: {$array['siret']}\n";
+    }
+
+    if (!isAffaires($array["affaires"])) {
+        $array["affairesError"] = "La saisie entrée est incorrecte, vous devez mettre uniquement des chiffres";
+        $array["isSuccess"] = false;
+    } else {
+        $emailText .= "Chiffres d'Affaire: {$array['affaires']}\n";
+    }
+
+    if (!isPrime($array["prime"])) {
+        $array["primeError"] = "La saisie entrée est incorrecte, vous devez mettre uniquement des chiffres";
+        $array["isSuccess"] = false;
+    } else {
+        $emailText .= "Prime d'Activité: {$array['prime']}\n";
     }
 
     if (empty($array["statut"])) {
@@ -83,25 +100,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $emailText .= "Statut de l'entreprise : {$array['statut']}\n";
     }
 
-    if (empty($array["choice"])) {
-        $array["choiceError"] = "Veuillez sélectionner un type d'assurance, svp";
-        $array["isSuccess"] = false;
-    } else {
-        $emailText .= "Cette personne a choisi cette assurance : {$array['choice']}\n";
-    }
-
     if (empty($array["siret"])) {
-        $array["siretError"] = "Veuillez entrer votre numéro de siret, svp";
+        $array["siretError"] = "Veuillez entrer un numéro de siret, svp";
         $array["isSuccess"] = false;
     } else {
         $emailText .= "Numero de SIRET : {$array['siret']}\n";
-    }
-
-    if (empty($array["sexe"])) {
-        $array["sexeError"] = "Veuillez sélectionner votre sexe, svp";
-        $array["isSuccess"] = false;
-    } else {
-        $emailText .= "Cette personne est un(e): {$array['sexe']}\n";
     }
 
     if (empty($array["activite"])) {
@@ -119,8 +122,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $emailText .= "Prime d'Activité: {$array['prime']}\n";
     }
 
-    if (!empty($array["message"])) {
-        $emailText .= "Message: {$array['message']}\n";
+    if (!empty($array["message3"])) {
+        $emailText .= "Message: {$array['message3']}\n";
     }
 
     if (! empty($array["sociale"])) {
@@ -132,22 +135,40 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if ($array["isSuccess"]) {
-        $headers = "From: {$array['Prénom']} {$array['Nom']}  <{$array['email']}>\r\nReply-To: {$array['email']}";
-        mail($emailTo, "Demande de devis ", $emailText, $headers);
+        $headers = "From: {$array['Prénom3']} {$array['Nom3']}  <{$array['email']}>\r\nReply-To: {$array['email3']}";
+        mail($emailTo, "Demande de devis : Professionnel", $emailText, $headers);
     }
 
     echo json_encode($array);
 
 }
 
-function isEmail($email)
+function isEmail($email3)
 {
-    return filter_var($email, FILTER_VALIDATE_EMAIL);
+    return filter_var($email3, FILTER_VALIDATE_EMAIL);
 }
 
-function isPhone($phone)
+function isSiret($siret)
 {
-    return preg_match("#(\+[0-9]{2}\([0-9]\))?[0-9]{10}#", $phone);
+    return preg_match("#^(1|2|3|4|5|6|7|8|9|10)$#", $siret);
+    
+}
+
+function isAffaires($affaires)
+{
+    return preg_match("#^(1|2|3|4|5|6|7|8|9|10)$#", $affaires);
+    
+}
+
+function isPrime($prime)
+{
+    return preg_match("#^(1|2|3|4|5|6|7|8|9|10)$#", $prime);
+    
+}
+
+function isPhone($phone3)
+{
+    return preg_match("#(\+[0-9]{2}\([0-9]\))?[0-9]{10}#", $phone3);
     //return preg_match("#(\+[0-9]{2}\([0-9]\))?[0-9]{10}#", $phone);  return preg_match("/^[0-9 ]*$/",$phone);
 }
 

@@ -1,7 +1,7 @@
 <h2 style="margin: 30px 0px 30px 0px;"> Demande de devis : Professionnel </h2>
 
 <!--- MODIFICATION DU CONTENU!-->
-<form id="contact-form" method="post" role="form" style="margin-top: 10px;" data-action="core/contactdevis2.php">
+<form class="col-lg-12" id="contact-form" method="post" role="form" style="margin-top: 10px;" data-action="core/contactdevis2.php">
 
 
     <h5 style="margin-bottom: 20px; color: #a34d1f;">
@@ -76,8 +76,9 @@
             <p class="comments" style="color: red; margin-top: 5px;"></p>
         </div>
         <div class="">
-            <label for="affaires">Chiffres d'Affaires</label>
+            <label for="affaires">Chiffre d'Affaire (€)</label>
             <input id="affaires" type="text" name="affaires" class="form-control" placeholder="Votre chiffre d'affaire">
+            <p class="comments" style="color: red; margin-top: 5px;"></p>
         </div>
     </div> 
     <div class="" style="margin-bottom: 50px;">
@@ -89,8 +90,9 @@
             <input id="compagnie" type="text" name="compagnie" class="form-control" placeholder="Le nom de la compagnie d'assurance" style="margin-bottom: 20px;">
         </div>
         <div class="">
-            <label for="prime">Prime actuelle</label>
-            <input id="prime" type="text" name="prime" class="form-control" placeholder="Votre prime actuelle">
+            <label for="prime">Prime actuelle (€)</label>
+            <input id="prime" type="text" name="prime" min="9" max="14" class="form-control" placeholder="Votre prime actuelle">
+            <p class="comments" style="color: red; margin-top: 5px;"></p>
         </div>
     </div>                    
     <div class="" style="margin-bottom: 50px;">
@@ -99,13 +101,13 @@
         </h5>
 
         <div class="">
-            <label for="firstname">Prénom<span class="blue">*</span></label>
-            <input id="firstname" type="text" name="firstname" class="form-control" placeholder="Votre prénom">
+            <label for="firstname3">Prénom<span class="blue">*</span></label>
+            <input id="firstname3" type="text" name="firstname3" class="form-control" placeholder="Votre prénom">
             <p class="comments" style="color: red; margin-top: 5px;"></p>
         </div>
         <div class="">
-            <label for="name">Nom<span class="blue">*</span></label>
-            <input id="name" type="text" name="name" class="form-control" placeholder="Votre Nom">
+            <label for="name3">Nom<span class="blue">*</span></label>
+            <input id="name3" type="text" name="name3" class="form-control" placeholder="Votre Nom">
             <p class="comments" style="color: red; margin-top: 5px;"></p>
         </div>
         <div class="">
@@ -114,20 +116,19 @@
             <p class="comments" style="color: red; margin-top: 5px;"></p>
         </div>
         <div class="">
-            <label for="email">Email<span class="blue">*</span></label>
-            <input id="email" type="text" name="email" class="form-control" id="email" placeholder="Votre Email">
+            <label for="email3">Email<span class="blue">*</span></label>
+            <input id="email3" type="text" name="email3" class="form-control" id="email3" placeholder="Votre Email">
             <p class="comments" style="color: red; margin-top: 5px;"></p>
         </div>
         <div class="">
-            <label for="phone">Téléphone<span class="blue">*</span></label>
-            <input id="phone" type="tel" name="phone" maxlenght="10" size="10" class="form-control" placeholder="Votre Téléphone">
+            <label for="phone3">Téléphone<span class="blue">*</span></label>
+            <input id="phone3" type="tel" name="phone3" maxlenght="10" size="10" class="form-control" placeholder="Votre Téléphone">
             <p class="comments" style="color: red; margin-top: 5px;"></p>
         </div>
 
         <div class="form-group">
-            <label for="message">Message<span class="blue">*</span> </label>
-            <textarea class="form-control" id="message" name="message" rows="10" style="height: 150px;" placeholder="Votre Message"></textarea>
-            <p class="comments" style="color: red; margin-top: 5px;"></p>
+            <label for="message3">Message </label>
+            <textarea class="form-control" id="message" name="message3" rows="10" style="height: 150px;" placeholder="Votre Message"></textarea>
         </div>
         <div class="">
             <p class="blue" style="padding-top: 10px;"><strong>* Ces informations sont requises.</strong></p>

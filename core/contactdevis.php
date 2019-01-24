@@ -93,13 +93,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $emailText .= "Code postale: {$array['postale']}\n";
     }
 
+    if (!isPostale($array["postale"])) {
+        $array["postaleError"] = "Vérifier votre saisie, svp";
+        $array["isSuccess"] = false;
+    } else {
+        $emailText .= "Code Postale: {$array['postale']}\n";
+    }
+
     if (!empty($array["message"])) {
         $emailText .= "Message: {$array['message']}\n";
     }
 
     if ($array["isSuccess"]) {
         $headers = "From: {$array['Prénom']} {$array['Nom']}  <{$array['email']}>\r\nReply-To: {$array['email']}";
-        mail($emailTo, "Demande de devis ", $emailText, $headers);
+        mail($emailTo, "Demande de devis : Particulier", $emailText, $headers);
     }
 
     echo json_encode($array);
@@ -109,6 +116,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 function isEmail($email)
 {
     return filter_var($email, FILTER_VALIDATE_EMAIL);
+}
+
+function isPostale($postale)
+{
+    return filter_var($postale, FILTER_VALIDATE_EMAIL);
 }
 
 function isPhone($phone)

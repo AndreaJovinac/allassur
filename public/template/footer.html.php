@@ -285,7 +285,11 @@
                     </li>
                     <li>
                         <a href="./index
-.php?page=devis"> Faire un devis </a>
+.php?page=devis"> Devis pour Particulier </a>
+                    </li>
+                    <li>
+                        <a href="./index
+.php?page=devis2"> Devis pour Professionnel </a>
                     </li>
                 </ul>
             </div>

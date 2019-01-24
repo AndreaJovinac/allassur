@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $array["firstnameError"] = "Veuillez saisir votre prénom, svp.";
         $array["isSuccess"] = false;
     } else {
-        $emailText .= "Prenom: {$array['firstname']}\n";
+        $emailText .= "Prenom: {$array['firstname2']}\n";
     }
 
     if (empty($array["name2"])) {
@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if ($array["isSuccess"]) {
-        $headers = "From: {$array['Prénom']} {$array['Nom']} <{$array['email']}>\r\nReply-To: {$array['email']}";
+        $headers = "From: {$array['Prénom2']} {$array['Nom2']} <{$array['email2']}>\r\nReply-To: {$array['email2']}";
         mail($emailTo, "Site All'Assur : Un client demande à être appeler", $emailText, $headers);
     }
 

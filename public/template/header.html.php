@@ -3,7 +3,7 @@
     <div class="logo float-left">
         <a href="./index
 .php" class="navbar-brand">
-            <img src="./img/logo.png" height="70" width="260" alt="" />
+            <img src="./img/logo.png" height="49" width="259" alt="" />
         </a>
     </div>
     <ul class="nav justify-content-end ppta col-6 float-right" style="margin-top: 50px;">
@@ -26,7 +26,7 @@
 <nav class="navbar navbar navigation2-2 d-lg-none">
     <div class="logo col-12" style="text-align: center; margin-bottom: 30px; padding: 0;">
         <a href="" class="navbar-brand">
-            <img src="./img/logo.png" height="70" width="220" alt="" />
+            <img src="./img/logo.png" height="49" width="259" alt="" />
         </a>
     </div>
     <ul class="nav nav-pills nav-fill col-12" style="padding: 0;">

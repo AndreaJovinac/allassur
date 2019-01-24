@@ -1,9 +1,7 @@
 <h2 style="margin: 30px 0px 30px 0px;"> Demande de devis : Particulier </h2>
 
-<h5> Pour faire une demande devis, nous vous invitons à remplir ce formulaire, afin que nous puissions vous contacter
-    par téléphone ou par mail </h5>
 <!--- MODIFICATION DU CONTENU!-->
-<form id="contact-form" method="post" role="form" style="margin-top: 30px;" data-action="core/contactdevis.php">
+<form class="col-lg-12" id="contact-form" method="post" role="form" style="margin-top: 30px;" data-action="core/contactdevis.php">
 
 
     <h5 style="margin-bottom: 20px; color: #a34d1f;">
@@ -86,7 +84,7 @@
         </div>
 
         <div class="form-group">
-            <label for="message">Message<span class="blue">*</span> </label>
+            <label for="message">Message </label>
             <textarea class="form-control" id="message" name="message" rows="10" style="height: 150px;" placeholder="Votre Message"></textarea>
             <p class="comments" style="color: red; margin-top: 5px;"></p>
         </div>

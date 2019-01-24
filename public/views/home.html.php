@@ -17,7 +17,7 @@
     <img class="card-img-top" src="img/prevoyancesante.png" alt="Card image cap" style="margin-top: 20px;">
   </a>
   <div class="card-body">
-    <h3 class="card-title">PREVOYANCE SANTE</h3>
+    <h3 class="card-title">PRÉVOYANCE SANTE</h3>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <a href="./index
 .php?page=prevoyance-sante" class="btn btn-default">Découvrez l'offre</a>
@@ -30,7 +30,7 @@
     <img class="card-img-top" src="img/sante.png" alt="Card image cap" style="margin-top: 20px;">
   </a>
   <div class="card-body">
-    <h3 class="card-title">SANTE</h3>
+    <h3 class="card-title">SANTÉ</h3>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <a href="./index
 .php?page=sante" class="btn btn-default">Découvrez l'offre</a>

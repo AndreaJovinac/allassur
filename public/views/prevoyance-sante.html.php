@@ -12,3 +12,40 @@ En cas d’invalidité, une rente viendra compenser la perte de revenus, jusqu�
 <br/><br/><a href="./index
 .php?page=devis"> <button type="button" class="btn btn-secondary" class="display : block;">Faire un devis</button></a>
 <br/></p>
+<br/>
+<br/>
+
+    <h3 class="col-12" style="display: inline-block; padding: 0; color: black; font-size : 25px; margin-top: 30px;">Voir aussi :</h3>
+
+        <div class="card col-lg-6" style="margin-top: 20px; ">
+        <a href="./index.php?page=obseques">
+            <img class="card-img-top" src="img/obseques.png" alt="Card image cap" style="margin-top: 20px;">
+        </a>
+        <div class="card-body">
+            <h3 class="card-title">OBSEQUES</h3>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="./index.php?page=obseques" class="btn btn-default">Découvrez l'offre</a>
+        </div>
+        </div>
+
+        <div class="card col-lg-6" style=" margin-top: 20px;">
+        <a href="./index.php?page=dependance">
+            <img class="card-img-top" src="img/dependance.png" alt="Card image cap" style="margin-top: 20px;">
+        </a>
+        <div class="card-body">
+            <h3 class="card-title">DEPENDANCE</h3>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="./index.php?page=dependance" class="btn btn-default">Découvrez l'offre</a>
+        </div>
+        </div>
+
+        <div class="card col-lg-6" style="margin-top: 20px;">
+        <a href="./index.php?page=retraite">
+            <img class="card-img-top" src="img/retraite.png" alt="Card image cap" style="margin-top: 20px;">
+        </a>
+        <div class="card-body">
+            <h3 class="card-title">RETRAITE</h3>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="./index.php?page=retraite" class="btn btn-default">Découvrez l'offre</a>
+        </div>
+        </div>
