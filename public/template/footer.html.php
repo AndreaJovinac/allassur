@@ -189,21 +189,6 @@
 
                     <li>
                         <a href="./index
-.php?page=flotte-automobile">Flotte Automobile</a>
-                    </li>
-
-                    <li>
-                        <a href="./index
-.php?page=vtc">VTC</a>
-                    </li>
-
-                    <li>
-                        <a href="./index
-.php?page=taxi">TAXI</a>
-                    </li>
-
-                    <li>
-                        <a href="./index
 .php?page=moto">Moto</a>
                     </li>
 
@@ -224,44 +209,58 @@
                 <ul class="footer-list">
                     <h5 style="margin-bottom: 20px;">Professionnel</h5>
                     <li>
-                        <a href="./index
-.php?page=artisans">Artisans / BTP</a>
+                        <a href="./index.php?page=artisans">Responsabilité Civile</a>
+                    </li>
+                    <li>
+                        <a href="./index.php?page=artisans">Mutuelle Entreprise</a>
+                    </li>
+                    <li>
+                        <a href="./index.php?page=artisans">Prevoyance Entreprise</a>
+                    </li>
+                    <li>
+                        <a href="./index.php?page=artisans">Artisans / BTP</a>
+                    </li>
+                    <li>
+                        <a href="./index.php?page=artisans">Auto-entrepreneur</a>
                     </li>
 
                     <li>
-                        <a href="./index
-.php?page=commercants">Commerçants </a>
+                        <a href="./index.php?page=flotte-automobile">Flotte Automobile</a>
                     </li>
 
                     <li>
-                        <a href="./index
-.php?page=immobilier">Immobilier</a>
+                        <a href="./index.php?page=vtc">VTC</a>
                     </li>
 
                     <li>
-                        <a href="./index
-.php?page=m-services">Métiers du service</a>
+                        <a href="./index.php?page=taxi">TAXI</a>
+                    </li>
+                    <li>
+                        <a href="./index.php?page=commercants">Commerçants </a>
                     </li>
 
                     <li>
-                        <a href="./index
-.php?page=m-sante">Métiers de la santé</a>
-                    </li>
-
-
-                    <li>
-                        <a href="./index
-.php?page=hotellerie">Hotellerie</a>
+                        <a href="./index.php?page=immobilier">Immobilier</a>
                     </li>
 
                     <li>
-                        <a href="./index
-.php?page=restauration">Restauration</a>
+                        <a href="./index.php?page=m-services">Métiers du service</a>
                     </li>
 
                     <li>
-                        <a href="./index
-.php?page=secteurs">Autres secteurs</a>
+                        <a href="./index.php?page=m-sante">Métiers de la santé</a>
+                    </li>
+
+                    <li>
+                        <a href="./index.php?page=hotellerie">Hotellerie</a>
+                    </li>
+
+                    <li>
+                        <a href="./index.php?page=restauration">Restauration</a>
+                    </li>
+
+                    <li>
+                        <a href="./index.php?page=assurances">Autres Assurances</a>
                     </li>
                 </ul>
             </div>
@@ -276,20 +275,16 @@
 
                     <h5 style="margin-top: 40px; margin-bottom: 20px;">Qui sommes nous ? </h5>
                     <li>
-                        <a href="./index
-.php?page=a-propos"> À propos d'Allassur</a>
+                        <a href="./index.php?page=a-propos"> À propos d'Allassur</a>
                     </li>
                     <li>
-                        <a href="./index
-.php?page=conseil"> Un Conseil ?</a>
+                        <a href="./index.php?page=conseil"> Un Conseil ?</a>
                     </li>
                     <li>
-                        <a href="./index
-.php?page=devis"> Devis pour Particulier </a>
+                        <a href="./index.php?page=devis"> Devis pour Particulier </a>
                     </li>
                     <li>
-                        <a href="./index
-.php?page=devis2"> Devis pour Professionnel </a>
+                        <a href="./index.php?page=devis2"> Devis pour Professionnel </a>
                     </li>
                 </ul>
             </div>
@@ -327,21 +322,17 @@
                         jovinacandrea.fr </a></p>
                 <ul class="footer-list copyright col-5 justify-content-end">
                     <li>
-                        <a href="./index
-.php?page=mentions-legales">Mentions Légales</a>
+                        <a href="./index.php?page=mentions-legales">Mentions Légales</a>
                     </li>
                     <li>
-                        <a href="./index
-.php?page=cgv"> CGV </a>
+                        <a href="./index.php?page=cgv"> CGV </a>
                     </li>
                     <li>
-                        <a href="./index
-.php?page=plan"> Plan du site</a>
+                        <a href="./index.php?page=plan"> Plan du site</a>
                     </li>
 
                     <li>
-                        <a href="./index
-.php?page=conseil"> Un Conseil ?</a>
+                        <a href="./index.php?page=conseil"> Un Conseil ?</a>
                     </li>
                 </ul>
             </div>

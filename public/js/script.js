@@ -11,18 +11,25 @@ $(document).ready(function(){
     $(".dLabelsante").mouseleave(function(){
         $(".dLabelsante").css("display", "none");
     });
-    $("#dLabel2").mouseenter(function(){
-        $(".dropdown-menu2").css("display", "block");
+
+    $(".prevoyancesante2").mouseenter(function(){
+        $(".dLabelsante2").css("display", "block");
     });
-    $("#dLabel2").mouseleave(function(){
-        $(".dropdown-menu2").css("display", "none");
+    $(".prevoyancesante2").mouseleave(function(){
+        $(".dLabelsante2").css("display", "none");
     });
-    $(".dropdown-menu2").mouseenter(function(){
-        $(".dropdown-menu2").css("display", "block");
+    $(".dLabelsante2").mouseenter(function(){
+        $(".dLabelsante2").css("display", "block");
     });
-    $(".dropdown-menu2").mouseleave(function(){
-        $(".dropdown-menu2").css("display", "none");
+    $(".dLabelsante2").mouseleave(function(){
+        $(".dLabelsante2").css("display", "none");
     });
+
+    
+
+
+    
+   
 
     $("#obsequehref").click(function () {
         $('html, body').animate({ scrollTop: 305 }, '5000000')

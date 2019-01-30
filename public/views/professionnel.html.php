@@ -38,7 +38,7 @@
                                </a>
                               <div class="card-body">
                                 <h3 class="card-title">IMMOBILIER</h3>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text">Couvrez vos responsabilités <br/> de propriétaire d’immeuble.</p>
                                 <a href="./index.php?page=immobilier" class="btn btn-default">Découvrez l'offre</a>
                               </div>
                             </div>
@@ -48,7 +48,7 @@
                                     <img class="card-img-top" src="img/metiers-service.png" alt="Card image cap" style="margin-top: 20px;">
                                </a>
                               <div class="card-body">
-                                <h3 class="card-title">METIERS DU SERVICE</h3>
+                                <h3 class="card-title">PREVOYANCE ENTREPRISE</h3>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="./index.php?page=m-services" class="btn btn-default">Découvrez l'offre</a>
                               </div>
@@ -92,8 +92,8 @@
                                     <img class="card-img-top" src="img/secteur.png" alt="Card image cap" style="margin-top: 20px;">
                                </a>
                               <div class="card-body">
-                                <h3 class="card-title">AUTRES SECTEURS </h3>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h3 class="card-title">AUTRES ASSURANCES </h3>
+                                <p class="card-text">Besoin d’une assurance ? <br/>Nos experts sont à vos cotés.</p>
                                 <a href="./index.php?page=secteurs" class="btn btn-default">Découvrez l'offre</a>
                               </div>
                             </div>

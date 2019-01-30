@@ -22,16 +22,20 @@ class Controller {
     );
 
     public $choicesPro = array(
-        "artisans" => "Artisans et BTP",
+        "responsacivile" => "Responsabilité Civile",
+        "metiersservices" => "Métiers du Service",
+        "metiersanté" => "Métiers de la Santé",
+        "restauration" => "Restauration",
+        "hotellerie" => "Hotellerie",
         "commercants" => "Commerçants",
-        "immobilier" => "Immobilier",
         "flotte" => "Flotte Automobile",
         "vtc" => "VTC",
         "taxi" => "Taxi",
-        "metiersservices" => "Métiers du Service",
-        "metiersanté" => "Métiers de la Santé",
-        "hotellerie" => "Hotellerie",
-        "restauration" => "Restauration",
+        "immobilier" => "Immobilier",
+        "autoentrepreneur" => "Autoentrepreneur",
+        "prevoyancentreprise" => "Prévoyance Entreprise",
+        "artisans" => "Artisans et BTP",
+        "mutuelleentreprise" => "Mutuelle Entreprise",
         "assurances" => "Autres Assurances",
     );
 
