@@ -1,11 +1,11 @@
 <h2 class="col-12" style="display: inline-block; padding: 0;">Automobile</h2>
 <img src="img/voiture.png" class="d-none d-lg-block d-md-block" alt="Artisans-All'Assur" style="margin-top: 20px;"/>
-<p class="col-9" style="line-height: 24px; margin-top: 20px; font-size: 16px; padding: 0;"> 
-L’assurance automobile est une garantie qui permet d’être couvert en cas de sinistre. Si votre véhicule est à l’origine d’un accident ou d’un dommage causé à un tiers, qu’il soit passager ou non, cette assurance interviendra pour prendre en charge les frais occasionnés.
-La "responsabilité civile" obligatoire pour tout assuré est incluse dans chaque contrat auto, elle permet d’être correctement indemnisé en cas d’accidents de la route. Elle garantit l'indemnisation des dommages matériels et corporels causés à autrui par le conducteur de la voiture ou par ses passagers lors d'un accident.
+<h5 style="margin-top: 20px;"> Comparez plus de 200 formules d’assurance auto et économisé jusqu’a 40% sur votre contrat.</h5>
+<p class="col-9" style="line-height: 24px; margin-top: 10px; font-size: 16px; padding: 0;"> 
+Tout le monde peut rencontrer des difficultés pour s’assurer. Que vous soyez résilié, malus, bonus ou jeune conducteur, 
+All’Assur s’adapte à votre profil conducteur et vous assure.
 
-<br/><br/><a href="./index
-.php?page=devis"> <button type="button" class="btn btn-secondary" class="display : block;">Faire un devis</button></a>
+<br/><br/><a href="./index.php?page=devis"> <button type="button" class="btn btn-secondary" class="display : block;">Faire un devis</button></a>
 <br/></p>
 
 <h3 class="col-12" style="display: inline-block; padding: 0; color: black; font-size : 25px; margin-top: 30px;">Voir aussi :</h3>

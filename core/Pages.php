@@ -9,8 +9,7 @@
         'prevoyance-sante' => 'Prévoyance Santé',
         'assurance-pret' => 'Assurance Prêt',
         'automobile' => 'Automobile',
-        'vtc' => 'VTC',
-        'taxi' => 'Taxi',
+        'juridique' => 'Protection Juridique',
         'moto' => 'Moto',
         'habitation' => 'Habitation',
         'chiens-chats' => 'Chiens-Chats',
@@ -27,6 +26,7 @@
         'plan' => 'Plan du site',
         'cgv' => 'CGV',
         'mentions-legales' => 'Mentions Légales'
+        
     );
     public static $pros = array(
         'homePro' => 'Professionnel',
@@ -38,7 +38,9 @@
         'm-sante' => ' Métiers de la Santé',
         'hotellerie' => 'Hotellerie',
         'restauration' => 'Restauration',
-        'secteurs' => 'Autres Secteurs',
+        'assurances' => 'Autres Assurances',
+        'vtc' => 'VTC',
+        'taxi' => 'Taxi',
     );
 
  }

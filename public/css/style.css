@@ -141,6 +141,12 @@ input[type="radio"] {
     font-size: 14px;
 }
 
+.navigationnum {
+    background-color: #fff;
+    height: 40px;
+    font-size: 14px;
+    color: black;
+}
 .telall {
     
     color: white;
@@ -169,7 +175,7 @@ input[type="radio"] {
 
 #partic {
     color: black;
-    margin-right: 60px;
+    margin-right: 30px;
 }
 
 

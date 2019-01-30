@@ -7,10 +7,9 @@
                 <div class="picto1 col-lg-4 " style="margin-top: 20px; margin-bottom: 20px;">
                     <img class="" src="img/telephone.png" alt="Card image cap" height="100" width="100">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-default" data-toggle="modal" data-target="#exampleModal">Par
-                            téléphone ?</a>
+                        <h5> Téléphone </h5>
+                        <p class="card-text">All'Assur vous propose <br/>de nous contacter par téléphone, <br/>cliquer sur le bouton ci-dessous :</p>
+                        <a href="#" class="btn btn-default" data-toggle="modal" data-target="#exampleModal"> Appeler ?</a>
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
@@ -25,7 +24,8 @@
                                     <div class="modal-body">
                                         <p> Vous pouvez contacter un conseiller par téléphonne. Notre agence est
                                             ouverte du lundi au vendredi de 9h00 à 18h00</p>
-                                        <h3> 01 44 54 95 45</h3>
+                                        <h3> 01 88 32 64 48
+                                             ou 06 22 95 43 63</h3>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
@@ -38,8 +38,8 @@
                 <div class="picto1 col-lg-4 " style="margin-top: 20px; margin-bottom: 20px;">
                     <img class="" src="img/email.png" alt="Card image cap" height="100" width="100">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h5> E-Mail </h5>
+                        <p class="card-text">All'Assur vous propose <br/>de nous contacter par mail, <br/>cliquer sur le bouton ci-dessous :</p>
                         <a href="#" class="btn btn-default" data-toggle="modal" data-target="#exampleModal2">Par mail ?</a>
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2"
@@ -69,8 +69,8 @@
                 <div class="picto1 col-lg-4" style="margin-top: 20px; margin-bottom: 20px;">
                     <img class="" src="img/conseiller.png" alt="Card image cap" height="100" width="100">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h5> Être rappelé </h5>
+                        <p class="card-text">All'Assur vous propose <br/>de vous rappeler par téléphone, <br/>cliquer sur le bouton ci-dessous :</p>
                         <a href="#" class="btn btn-default" data-toggle="modal" data-target="#exampleModal3">Être
                             rappelé ?</a>
                         <!-- Modal -->
@@ -308,7 +308,8 @@
                     <li>
                         <p>93 rue du Faubourg Saint Denis, <br /> 
                            75010 Paris <br />
-                            Téléphone : 01 23 45 05 67 <br />
+                            Téléphone : 01 88 32 64 48 <br /> 
+                            ou 06 22 95 43 63 <br />
                             Mail : contact@allassur.fr<br />
                         </p>
                     </li>

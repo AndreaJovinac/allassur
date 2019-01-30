@@ -8,17 +8,14 @@ class Controller {
     public $title;
 
     public $choicesParticulier = array(
-        "sante" => "Santé",
         "mutuelle" => "Mutuelle",
         "prevoyance" => "Prévoyance Santé",
-        "obseque" => "Obsèques",
+        "obseque" => "Obsèques Mort",
         "dependance" => "Dépendance",
         "retraite" => "Retraite",
         "pret" => "Assurance Prêt",
         "auto" => "Automobile",
-        "flotte" => "Flotte Automobile",
-        "vtc" => "VTC",
-        "taxi" => "Taxi",
+        "juridique" => "Protection juridique",
         "moto" => "Moto",
         "habitation" => "Habitation",
         "animaux" => "Chiens & Chats"
@@ -28,11 +25,14 @@ class Controller {
         "artisans" => "Artisans et BTP",
         "commercants" => "Commerçants",
         "immobilier" => "Immobilier",
+        "flotte" => "Flotte Automobile",
+        "vtc" => "VTC",
+        "taxi" => "Taxi",
         "metiersservices" => "Métiers du Service",
         "metiersanté" => "Métiers de la Santé",
         "hotellerie" => "Hotellerie",
         "restauration" => "Restauration",
-        "autressecteurs" => "Autres Secteurs",
+        "assurances" => "Autres Assurances",
     );
 
 
