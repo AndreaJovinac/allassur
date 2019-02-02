@@ -24,7 +24,7 @@
                     <label>
                         <input 
                             type="radio" 
-                            name="choice"
+                            name="choice2"
                             <?php if($ctrl->getSelectedDevis() == $key) echo('checked'); ?> 
                             value="<?php echo($value); ?>">
                         <?php echo($value); ?>

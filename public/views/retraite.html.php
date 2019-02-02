@@ -6,8 +6,7 @@
 Pour aider vos enfants ou petits-enfants à concrétiser leur projets de demain, financer leur études, leur permis de conduire, leur première installation. 
 Pour financer vos projets, faire face aux imprévus, vous faire plaisir, pour maintenir votre niveau de vie et parce que votre future pension de retraite ne sera probablement pas suffisante. 
 Pour protéger les gens qui vous sont chers et leur transmettre dans les meilleurs conditions votre épargne après votre décès.
-<br/><br/><a href="./index
-.php?page=devis"> <button type="button" class="btn btn-secondary" class="display : block;">Faire un devis</button></a>
+<br/><br/><a href="./index.php?page=devis"> <button type="button" class="btn btn-secondary" class="display : block;">Faire un devis</button></a>
 <br/></p>
 
 <h3 class="col-12" style="display: inline-block; padding: 0; color: black; font-size : 25px; margin-top: 30px;">Voir aussi :</h3>

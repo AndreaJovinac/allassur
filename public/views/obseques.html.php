@@ -6,8 +6,7 @@
  Les frais d’obsèques représentent une charge financière pour les familles qui est toujours sous-estimée. 
 Il faut compter en moyenne de 3 800€ à 4 500€ selon le mode choisi (inhumation ou crémation). 
 Sans compter tous les coûts annexes: frais de notaire, de succession… 
-<br/><br/><a href="./index
-.php?page=devis"> <button type="button" class="btn btn-secondary" class="display : block;">Faire un devis</button></a>
+<br/><br/><a href="./index.php?page=devis"> <button type="button" class="btn btn-secondary" class="display : block;">Faire un devis</button></a>
 <br/></p>
 
 

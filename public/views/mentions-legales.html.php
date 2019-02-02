@@ -26,7 +26,7 @@
     <br/>
     <span style="font-weight: 800;">Développement : </span><br/>
     Jovinac Andréa <br/>
-    Adresse : 5 RUE MAURICE AUDIN <br/>
+    Email: contact@jovinacandrea.fr <br/>
     Site Web : <a style="color: black;" href="http://www.jovinacandrea.fr">www.jovinacandrea.fr</a> 
     
     <br/>

@@ -19,12 +19,15 @@ $array = array(
     "affairesError" => "",
     "prime" => "",
     "primeError" => "",
+    "primeError2" => "",
     "activite" => "",
     "activiteError" => "",
     "statut" => null,
+    "choice2" => null,
+    "choiceError" => "",
     "statutError" => null,
     "isSuccess" => false);
-$emailTo = "contact@jovinacandrea.fr";
+$emailTo = "contact@allassur.fr";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $array["firstname3"] = test_input($_POST["firstname3"]);
@@ -40,6 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $array["prime"] = test_input($_POST["prime"]);
     $array["activite"] = test_input($_POST["activite"]);
     $array["sociale"] = test_input($_POST["sociale"]);
+    $array["choice2"] = test_input($_POST["choice2"]);
 
     $array["isSuccess"] = true;
     $emailText = "";
@@ -79,32 +83,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $emailText .= "N° Telephone: {$array['phone3']}\n";
     }
 
-    if (!isSiret($array["siret"])) {
-        $array["siretError"] = "Votre numéro de Siret, doit être composé de maximum 8 chiffres";
-        $array["isSuccess"] = false;
-    } else {
-        $emailText .= "N° SIRET: {$array['siret']}\n";
-    }
-
-    if (!isAffaires($array["affaires"])) {
-        $array["affairesError"] = "La saisie entrée est incorrecte, vous devez mettre uniquement des chiffres";
-        $array["isSuccess"] = false;
-    } else {
-        $emailText .= "Chiffres d'Affaire: {$array['affaires']}\n";
-    }
-
-    if (!isPrime($array["prime"])) {
-        $array["primeError"] = "La saisie entrée est incorrecte, vous devez mettre uniquement des chiffres";
-        $array["isSuccess"] = false;
-    } else {
-        $emailText .= "Prime d'Activité: {$array['prime']}\n";
-    }
-
     if (empty($array["statut"])) {
         $array["statutError"] = "Veuillez sélectionner votre statut svp.";
         $array["isSuccess"] = false;
     } else {
         $emailText .= "Statut de l'entreprise : {$array['statut']}\n";
+    }
+
+    if (empty($array["choice2"])) {
+        $array["choiceError"] = "Veuillez sélectionner votre statut svp.";
+        $array["isSuccess"] = false;
+    } else {
+        $emailText .= "Statut de l'entreprise : {$array['choice2']}\n";
     }
 
     if (empty($array["siret"])) {
@@ -153,24 +143,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 function isEmail($email3)
 {
     return filter_var($email3, FILTER_VALIDATE_EMAIL);
-}
-
-function isSiret($siret)
-{
-    return preg_match("#^(1|2|3|4|5|6|7|8|9|10)$#", $siret);
-    
-}
-
-function isAffaires($affaires)
-{
-    return preg_match("#^(1|2|3|4|5|6|7|8|9|10)$#", $affaires);
-    
-}
-
-function isPrime($prime)
-{
-    return preg_match("#^(1|2|3|4|5|6|7|8|9|10)$#", $prime);
-    
 }
 
 function isPhone($phone3)

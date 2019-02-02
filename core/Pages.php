@@ -16,7 +16,6 @@
         'obseques' => 'Obsèques',
         'dependance' => 'Dépendance',
         'retraite' => 'Retraite',
-        'flotte-automobile' => 'Flotte Automobile',
     );
     public static $devis = array(
         'devis' => 'Devis Particulier',
@@ -41,6 +40,12 @@
         'assurances' => 'Autres Assurances',
         'vtc' => 'VTC',
         'taxi' => 'Taxi',
+        'flotte-automobile' => 'Flotte Automobile',
+        'automobile-entreprise' => 'Automobile Entreprise',
+        'prevoyanceentreprise' => 'Prévoyance Entreprise',
+        'responsacivile' => 'Responsabilité Civile',
+        'autoentrepreneur' => 'Autoentrepreneur',
+        'mutuelleentreprise' => 'Mutuelle Entreprise'
     );
 
  }

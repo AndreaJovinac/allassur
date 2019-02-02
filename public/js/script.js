@@ -25,12 +25,6 @@ $(document).ready(function(){
         $(".dLabelsante2").css("display", "none");
     });
 
-    
-
-
-    
-   
-
     $("#obsequehref").click(function () {
         $('html, body').animate({ scrollTop: 305 }, '5000000')
     });
@@ -72,7 +66,7 @@ $(document).ready(function(){
                     $('#choicecontact .comments').html(json.choicecontactError);
                     $('#siret + .comments').html(json.siretError);
                     $('#activite + .comments').html(json.activiteError);
-                    $('#statut + .comments').html(json.statutError);
+                    $('#statut .comments').html(json.statutError);
                     $('#affaires + .comments').html(json.affairesError);
                     $('#prime + .comments').html(json.primeError);
 

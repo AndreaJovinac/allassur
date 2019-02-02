@@ -10,7 +10,7 @@ class Controller {
     public $choicesParticulier = array(
         "mutuelle" => "Mutuelle",
         "prevoyance" => "Prévoyance Santé",
-        "obseque" => "Obsèques Mort",
+        "obseque" => "Obsèques",
         "dependance" => "Dépendance",
         "retraite" => "Retraite",
         "pret" => "Assurance Prêt",
@@ -24,11 +24,11 @@ class Controller {
     public $choicesPro = array(
         "responsacivile" => "Responsabilité Civile",
         "metiersservices" => "Métiers du Service",
-        "metiersanté" => "Métiers de la Santé",
         "restauration" => "Restauration",
         "hotellerie" => "Hotellerie",
         "commercants" => "Commerçants",
-        "flotte" => "Flotte Automobile",
+        "automobile-entreprise" => "Automobile Entreprise",
+        "flotte-automobile" => "Flotte Automobile",
         "vtc" => "VTC",
         "taxi" => "Taxi",
         "immobilier" => "Immobilier",

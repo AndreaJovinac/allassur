@@ -21,7 +21,7 @@ $array = array(
     "sexe" => null,
     "sexeError" => "",
     "isSuccess" => false);
-$emailTo = "contact@jovinacandrea.fr";
+$emailTo = "contact@allassur.fr";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $array["firstname"] = test_input($_POST["firstname"]);

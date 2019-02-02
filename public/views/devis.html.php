@@ -32,8 +32,9 @@
                 </div>
                 <?php } ?>
             </div>
+            <p class="comments" style="color: red; margin-top: 5px;"></p>
         </div>
-        <p class="comments" style="color: red; margin-top: 5px;"></p>
+       
     </div>
     
     <div class="" style="margin-bottom: 50px;">
