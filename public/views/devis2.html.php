@@ -128,7 +128,7 @@
 
         <div class="form-group">
             <label for="message3">Message </label>
-            <textarea class="form-control" id="message" name="message3" rows="10" style="height: 150px;" placeholder="Votre Message"></textarea>
+            <textarea class="form-control" id="message3" name="message3" rows="10" style="height: 150px;" placeholder="Votre Message"></textarea>
         </div>
         <div class="">
             <p class="blue" style="padding-top: 10px;"><strong>* Ces informations sont requises.</strong></p>

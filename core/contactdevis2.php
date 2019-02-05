@@ -76,13 +76,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $emailText .= "N° Telephone: {$array['phone3']}\n";
     }
 
-    if (empty($array["phone3"])) {
-        $array["phoneError"] = "Veuillez saisir une adresse mail correcte, svp";
-        $array["isSuccess"] = false;
-    } else {
-        $emailText .= "N° Telephone: {$array['phone3']}\n";
-    }
-
     if (empty($array["statut"])) {
         $array["statutError"] = "Veuillez sélectionner votre statut svp.";
         $array["isSuccess"] = false;
@@ -112,7 +105,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if (!empty($array["compagnie"])) {
-        $emailText .= "Compagnie actuelle: {$array['compagnie']}\n";
+        $emailText .= "Compagnie d'assurance actuelle: {$array['compagnie']}\n";
     }
 
     if (!empty($array["prime"])) {
@@ -131,8 +124,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $emailText .= "Chiffres d'Affaires : {$array['affaires']}\n";
     }
 
-    if ($array["isSuccess"]) {
+    /*if ($array["isSuccess"]) {
         $headers = "From: {$array['Prénom3']} {$array['Nom3']}  <{$array['email']}>\r\nReply-To: {$array['email3']}";
+        mail($emailTo, "Demande de devis : Professionnel", $emailText, $headers);
+    }*/
+
+    if ($array["isSuccess"]) {
+        $headers = "From: {$array['Prénom']} {$array['Nom']}  <{$array['email']}>\r\nReply-To: {$array['email']}";
         mail($emailTo, "Demande de devis : Professionnel", $emailText, $headers);
     }
 

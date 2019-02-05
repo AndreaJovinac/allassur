@@ -7,9 +7,8 @@
                 <div class="picto1 col-lg-4 " style="margin-top: 20px; margin-bottom: 20px;">
                     <img class="" src="img/telephone.png" alt="Card image cap" height="100" width="100">
                     <div class="card-body">
-                        <h5> Téléphone </h5>
-                        <p class="card-text">All'Assur vous propose <br/>de nous contacter par téléphone, <br/>cliquer sur le bouton ci-dessous :</p>
-                        <a href="#" class="btn btn-default" data-toggle="modal" data-target="#exampleModal"> Appeler ?</a>
+                        <h5 style="margin-bottom: 30px;"> Téléphone </h5>
+                        <a href="#" class="btn btn-default" data-toggle="modal" data-target="#exampleModal"> Je choisis</a>
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
@@ -38,9 +37,9 @@
                 <div class="picto1 col-lg-4 " style="margin-top: 20px; margin-bottom: 20px;">
                     <img class="" src="img/email.png" alt="Card image cap" height="100" width="100">
                     <div class="card-body">
-                        <h5> E-Mail </h5>
-                        <p class="card-text">All'Assur vous propose <br/>de nous contacter par mail, <br/>cliquer sur le bouton ci-dessous :</p>
-                        <a href="#" class="btn btn-default" data-toggle="modal" data-target="#exampleModal2">Par mail ?</a>
+                        <h5 style="margin-bottom: 30px;"> E-Mail </h5>
+                        
+                        <a href="#" class="btn btn-default" data-toggle="modal" data-target="#exampleModal2">Je choisis</a>
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2"
                             aria-hidden="true">
@@ -53,8 +52,7 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <p> Vous pouvez contacter un conseiller par mail. Notre agence est ouverte du
-                                            lundi au vendredi de 9h00 à 18h00</p>
+                                        
                                         <h3> <a href="mailto:contact@allassur.fr" style="color: black;">
                                                 contact@allassur.fr</a> </h3>
                                     </div>
@@ -69,10 +67,9 @@
                 <div class="picto1 col-lg-4" style="margin-top: 20px; margin-bottom: 20px;">
                     <img class="" src="img/conseiller.png" alt="Card image cap" height="100" width="100">
                     <div class="card-body">
-                        <h5> Être rappelé </h5>
-                        <p class="card-text">All'Assur <br/> vous rappelle par téléphone, <br/>cliquer sur le bouton ci-dessous :</p>
-                        <a href="#" class="btn btn-default" data-toggle="modal" data-target="#exampleModal3">Être
-                            rappelé ?</a>
+                        <h5 style="margin-bottom: 30px;"> Être rappelé </h5>
+                       
+                        <a href="#" class="btn btn-default" data-toggle="modal" data-target="#exampleModal3">Je choisis</a>
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
                             aria-hidden="true">

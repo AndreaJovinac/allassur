@@ -46,7 +46,7 @@ $(document).ready(function(){
                  
                 if(json.isSuccess) 
                 {
-                    $('#contact-form').append("<p class='thank-you' style='padding: 10px; margin-top: 20px; margin-bottom: 30px;font-size: 24px; text-align: center; color: white; background-color: #683114;'>Merci d'avoir rempli ce formulaire de demande de devis.<br/> Vous recevrez votre devis par mail dans quelques de jours.</p>");
+                    $('#contact-form').append("<p class='thank-you' style='padding: 10px; margin-top: 20px; margin-bottom: 30px;font-size: 24px; text-align: center; color: white; background-color: #683114;'>Merci d'avoir rempli ce formulaire de demande de devis.<br/> Vous recevrez votre devis par mail dans quelques jours.</p>");
                     $('#contact-form')[0].reset();
                 }
                 else
