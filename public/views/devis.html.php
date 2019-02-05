@@ -36,10 +36,26 @@
         </div>
        
     </div>
-    
     <div class="" style="margin-bottom: 50px;">
         <h5 class="" style="margin-top: 30px; margin-bottom: 20px; color: #a34d1f;">
-            <strong> 2) Remplissez vos donnés personnelles et votre message :</strong>
+            <strong> 2) Êtes-vous déjà assuré(e) ? Si oui :</strong>
+        </h5>
+        <div class="">
+            <label for="compagnie">Nom de la compagnie d'assurance</label>
+            <input id="compagnie2" type="text" name="compagnie2" class="form-control" placeholder="Le nom de la compagnie d'assurance" style="margin-bottom: 20px;">
+        </div>
+        <div class="">
+            <label for="prime">Prime actuelle (€)</label>
+            <input id="prime" type="text" name="prime2" min="9" max="14" class="form-control" placeholder="Votre prime actuelle">
+        </div>
+        <div class="" style="margin-top: 20px;">
+            <label for="date" class="">Date d'échéance du contrat</label>
+            <input class="form-control" name="date2" type="date" value="2019-01-01" id="date2"> 
+        </div>
+    </div>
+    <div class="" style="margin-bottom: 50px;">
+        <h5 class="" style="margin-top: 30px; margin-bottom: 20px; color: #a34d1f;">
+            <strong> 3) Remplissez vos donnés personnelles et votre message :</strong>
         </h5>
 
         <div id="sexe" class=" col-lg-6 col-sm-12 col-xs-12" style="padding: 0; margin-bottom: 15px;">

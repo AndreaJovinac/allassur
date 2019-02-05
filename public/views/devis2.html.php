@@ -83,7 +83,7 @@
     </div> 
     <div class="" style="margin-bottom: 50px;">
         <h5 class="" style="margin-top: 30px; margin-bottom: 20px; color: #a34d1f;">
-            <strong> 4) Êtes-vous déjà assurer ? Si oui :</strong>
+            <strong> 4) Êtes-vous déjà assuré(e) ? Si oui :</strong>
         </h5>
         <div class="">
             <label for="compagnie">Nom de la compagnie d'assurance</label>

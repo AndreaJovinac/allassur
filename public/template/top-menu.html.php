@@ -1,7 +1,7 @@
 <nav class="navbar navbar navigation d-none d-lg-block" <?php if($ctrl->isPro()) echo('style="background-color: #a34d1f;"'); ?>>
     <div class="container wrap-barrenoir">
             <div class="navbar-header">
-                <span class="telall" style="font-size: 18px;"> Nous contacter : 01 88 32 64 48 ou 06 22 95 43 63</span>
+                <span class="telall" style="font-size: 18px;"> Nous contacter : 01 88 32 64 48 </span>
             </div>
             <ul class="nav justify-content-end barrenoir">
                 <li class="nav-item">
@@ -30,7 +30,7 @@
             <ul class="nav justify-content-end barrenoir">
                 <li class="nav-item">
                     <p style="margin-top: 30px; color: #a34d1f; font-size: 20px; font-weight: 800;" class="nav-link" href="./index.php?page=conseil"> 
-                    <span style="color: black;">Nous contacter :</span> 01 88 32 64 48 <span style="color: black;">ou</span> 06 22 95 43 63</p>
+                    <span style="color: black;">Nous contacter :</span> 01 88 32 64 48 </p>
                 </li>
                 
             </ul>

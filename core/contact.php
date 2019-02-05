@@ -12,7 +12,7 @@ $array = array(
     "phoneError" => "",
     "messageError" => "",
     "isSuccess" => false);
-$emailTo = "contact@jovinacandrea.fr";
+$emailTo = "contact@allassur.fr";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $array["firstname2"] = test_input($_POST["firstname2"]);

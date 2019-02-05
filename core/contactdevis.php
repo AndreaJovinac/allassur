@@ -15,6 +15,9 @@ $array = array(
     "choiceError" => "",
     "postaleError" => "",
     "postaleError2" => "",
+    "date2" => "",
+    "compagnie" => "",
+    "prime" => "",
     "postale" => "",
     "date" => null,
     "dateError" => null,
@@ -34,6 +37,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $array["message"] = test_input($_POST["message"]);
     $array["date"] = test_input($_POST["date"]);
     $array["postale"] = test_input($_POST["postale"]);
+    $array["date2"] = test_input($_POST["date2"]);
+    $array["prime"] = test_input($_POST["prime"]);
+    $array["compagnie"] = test_input($_POST["compagnie"]);
 
     $array["isSuccess"] = true;
     $emailText = "";
@@ -104,6 +110,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (!empty($array["message"])) {
         $emailText .= "Message: {$array['message']}\n";
+    }
+
+    if (!empty($array["date2"])) {
+        $emailText .= "Date d'écheance du contrat: {$array['date2']}\n";
+    }
+
+    if (!empty($array["compagnie"])) {
+        $emailText .= "Compagnie d'Assurance: {$array['message']}\n";
+    }
+
+    if (!empty($array["prime"])) {
+        $emailText .= "Prime actuelle: {$array['prime']}\n";
     }
 
     if ($array["isSuccess"]) {

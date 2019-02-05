@@ -70,7 +70,7 @@
                     <img class="" src="img/conseiller.png" alt="Card image cap" height="100" width="100">
                     <div class="card-body">
                         <h5> Être rappelé </h5>
-                        <p class="card-text">All'Assur vous propose <br/>de vous rappeler par téléphone, <br/>cliquer sur le bouton ci-dessous :</p>
+                        <p class="card-text">All'Assur <br/> vous rappelle par téléphone, <br/>cliquer sur le bouton ci-dessous :</p>
                         <a href="#" class="btn btn-default" data-toggle="modal" data-target="#exampleModal3">Être
                             rappelé ?</a>
                         <!-- Modal -->
