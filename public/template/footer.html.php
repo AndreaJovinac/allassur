@@ -322,7 +322,7 @@
                         <a href="./index.php?page=mentions-legales">Mentions Légales</a>
                     </li>
                     <li>
-                        <a href="./index.php?page=cgv"> CGV </a>
+                        <a href="./index.php?page=cgv"> CGU </a>
                     </li>
                     <li>
                         <a href="./index.php?page=plan"> Plan du site</a>

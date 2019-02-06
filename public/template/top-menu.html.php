@@ -1,4 +1,4 @@
-<nav class="navbar navbar navigation d-none d-lg-block" <?php if($ctrl->isPro()) echo('style="background-color: #a34d1f;"'); ?>>
+<nav class="navbar navbar navigation d-none d-lg-block sticky-top" <?php if($ctrl->isPro()) echo('style="background-color: #a34d1f;"'); ?>>
     <div class="container wrap-barrenoir">
             <div class="navbar-header">
                 <span class="telall" style="font-size: 18px;"> Nous contacter : 01 88 32 64 48 </span>

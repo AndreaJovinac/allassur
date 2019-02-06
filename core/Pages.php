@@ -23,7 +23,7 @@
         'a-propos' => 'À propos',
         'conseil' => 'Un Conseil ?',
         'plan' => 'Plan du site',
-        'cgv' => 'CGV',
+        'cgv' => 'CGU',
         'mentions-legales' => 'Mentions Légales'
         
     );

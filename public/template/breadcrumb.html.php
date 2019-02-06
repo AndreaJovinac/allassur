@@ -10,7 +10,7 @@
                             ; ?>         
                     <span style="font-weight: 200;"> > </span> 
                     <a href="index.php?page=<?php echo($ctrl->page) ?>" style="color: black;"> <?php echo($ctrl->title); ?> </a>
-                    <span style="font-weight: 200;"> > </span>
+                    <span style="font-weight: 200;">  </span>
                 </li>
         </ol>
     </nav>

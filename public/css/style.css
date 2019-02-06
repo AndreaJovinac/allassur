@@ -139,6 +139,7 @@ input[type="radio"] {
     background-color: black;
     height: 40px;
     font-size: 14px;
+    position: fixed;
 }
 
 .navigationnum {

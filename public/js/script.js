@@ -90,7 +90,7 @@ $(document).ready(function(){
                  
                 if(json.isSuccess) 
                 {
-                    $('#contact-formfooter').append("<p class='thank-you' style='color:red; padding: 10px; margin-top: 30px; font-size: 24px; text-align: center; color: white; background-color: #683114;'>Merci, un conseiller va vous contacter dans quelques jours. </p>");
+                    $('#contact-formfooter').append("<p class='thank-you' style='color:red; padding: 10px; margin-top: 30px; font-size: 24px; text-align: center; color: white; background-color: #683114;'>Merci, un conseiller va vous contacter rapidement. </p>");
                     $('#contact-formfooter')[0].reset();
                 }
                 else
